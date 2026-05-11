@@ -418,8 +418,8 @@ If you find this repository useful, please consider citing this list:
 
 ## All Thanks to Our Contributors
 
-<a href="https://github.com/chenhouyuan/Awesome-Relight/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=chenhouyuan/Awesome-Relight" alt="Contributors">
+<a href="https://github.com/houyuanchen111/Awesome-Relight/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=houyuanchen111/Awesome-Relight" alt="Contributors">
 </a>
 
 ---
