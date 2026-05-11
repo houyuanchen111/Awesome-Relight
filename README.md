@@ -409,7 +409,7 @@ If you find this repository useful, please consider citing this list:
   title = {Awesome Relight},
   author = {Awesome Relight Contributors},
   journal = {GitHub repository},
-  url = {https://github.com/chenhouyuan/Awesome-Relight},
+  url = {https://github.com/houyuanchen111/Awesome-Relight},
   year = {2026}
 }
 ```
@@ -426,4 +426,4 @@ If you find this repository useful, please consider citing this list:
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=chenhouyuan/Awesome-Relight&type=Date)](https://www.star-history.com/#chenhouyuan/Awesome-Relight&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=houyuanchen111/Awesome-Relight&type=Date)](https://www.star-history.com/#houyuanchen111/Awesome-Relight&Date)
