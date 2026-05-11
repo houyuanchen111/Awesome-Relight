@@ -1,0 +1,429 @@
+<div align="center">
+
+# 💡 Awesome Relight
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Relighting](https://img.shields.io/badge/topic-relighting-f59e0b.svg)](#)
+
+**A curated map of relighting research, datasets, benchmarks, demos, and software across image editing, video, 3D, avatars, inverse rendering, lighting estimation, and generative models.**
+
+<p align="center">
+  <img src="assets/teaser.png" alt="Awesome Relight" width="100%">
+</p>
+
+</div>
+
+---
+
+## 🚩 News & Updates
+
+
+🔥 **[Ongoing] Coverage Expansion** — We are tracking relighting papers, datasets, code, demos, challenges, and production tools.
+
+💡 **[Ongoing] Contributions Welcome** — Missing recent work, code releases, datasets, and software links are welcome via PR. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## Overview
+
+- 🎯 [Aim of the Project](#aim-of-the-project)
+- 📚 [Surveys](#surveys)
+- 🖼️ [Scene and General Image Relighting](#scene-and-general-image-relighting)
+- 🎞️ [Video Relighting](#video-relighting)
+- 🧑 [Portrait, Face, and Human Relighting](#portrait-face-and-human-relighting)
+- 🧊 [3D, NeRF, Gaussian, and Object Relighting](#3d-nerf-gaussian-and-object-relighting)
+- 🚗 [Relighting for Driving and Robotics](#relighting-for-driving-and-robotics)
+- 🛡️ [Security and Robustness](#security-and-robustness)
+- 🎮 [Reinforcement Learning](#reinforcement-learning)
+- 📦 [Datasets and Benchmarks](#datasets-and-benchmarks)
+- 🏁 [Workshops and Challenges](#workshops-and-challenges)
+- 🛠️ [Software, Demos, and Products](#software-demos-and-products)
+- 🔭 [Related Areas](#related-areas)
+- 🙏 [Acknowledgements](#acknowledgements)
+- 📝 [Citation](#citation)
+
+---
+
+## Aim of the Project
+
+Relighting is a practical meeting point between computer graphics, computer vision, inverse rendering, neural rendering, diffusion models, portrait editing, video generation, and 3D reconstruction. This repository aims to:
+
+- 🔍 **Organize** relighting work by task and representation, instead of only by publication date.
+- 🧭 **Map** the field from classical illumination estimation to modern generative lighting control.
+- 🛠️ **Track** papers together with project pages, code, demos, datasets, and software products.
+- 🤝 **Help** researchers and builders find relevant methods for portraits, objects, scenes, videos, avatars, and driving data.
+- 📌 **Maintain** a clean awesome-list format that is easy to scan and easy to extend.
+
+---
+
+## Surveys
+
+- **Deep Neural Models for Illumination Estimation and Relighting: A Survey**. [![Paper](https://img.shields.io/badge/Paper-CGF2021-red.svg)](https://onlinelibrary.wiley.com/doi/epdf/10.1111/cgf.14283)
+
+---
+
+## Scene and General Image Relighting
+
+- **Learning to Factorize and Relight a City**. [![arXiv](https://img.shields.io/badge/arXiv-2008.02796-b31b1b.svg)](https://arxiv.org/abs/2008.02796)
+- **Self-supervised Outdoor Scene Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2107.03106-b31b1b.svg)](https://arxiv.org/abs/2107.03106) [![Code](https://img.shields.io/github/stars/YeeU/relightingNet?style=flat&logo=github&label=Code&color=green)](https://github.com/YeeU/relightingNet)
+- **OutCast: Outdoor Single-image Relighting with Cast Shadows**. [![arXiv](https://img.shields.io/badge/arXiv-2204.09341-b31b1b.svg)](https://arxiv.org/abs/2204.09341)
+- **StyLitGAN: Image-Based Relighting via Latent Control**. [![Paper](https://img.shields.io/badge/Paper-CVPR2024-red.svg)](https://openaccess.thecvf.com/content/CVPR2024/papers/Bhattad_StyLitGAN_Image-Based_Relighting_via_Latent_Control_CVPR_2024_paper.pdf) [![Code](https://img.shields.io/github/stars/anandbhattad/stylitgan?style=flat&logo=github&label=Code&color=green)](https://github.com/anandbhattad/stylitgan)
+- **PNRNet: Physically-Inspired Neural Rendering for Any-to-Any Relighting**. [![Paper](https://img.shields.io/badge/Paper-TIP2022-red.svg)](https://ieeexplore.ieee.org/document/9785513) [![Code](https://img.shields.io/github/stars/waldenlakes/PNRNet?style=flat&logo=github&label=Code&color=green)](https://github.com/waldenlakes/PNRNet)
+- **Local Relighting of Real Scenes**. [![arXiv](https://img.shields.io/badge/arXiv-2207.02774-b31b1b.svg)](https://arxiv.org/abs/2207.02774) [![Code](https://img.shields.io/github/stars/audreycui/relighting?style=flat&logo=github&label=Code&color=green)](https://github.com/audreycui/relighting)
+- **Designing an Illumination-Aware Network for Deep Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2207.10582-b31b1b.svg)](https://arxiv.org/abs/2207.10582) [![Code](https://img.shields.io/github/stars/NK-CS-ZZL/IAN?style=flat&logo=github&label=Code&color=green)](https://github.com/NK-CS-ZZL/IAN)
+- **Weakly-supervised Single-view Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2303.13852-b31b1b.svg)](https://arxiv.org/abs/2303.13852) [![Code](https://img.shields.io/github/stars/renjiaoyi/imagerelighting?style=flat&logo=github&label=Code&color=green)](https://github.com/renjiaoyi/imagerelighting)
+- **Intrinsic Image Diffusion for Single-view Material Estimation**. [![arXiv](https://img.shields.io/badge/arXiv-2312.12274-b31b1b.svg)](https://arxiv.org/abs/2312.12274) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://peter-kocsis.github.io/IntrinsicImageDiffusion/) [![Code](https://img.shields.io/github/stars/Peter-Kocsis/IntrinsicImageDiffusion?style=flat&logo=github&label=Code&color=green)](https://github.com/Peter-Kocsis/IntrinsicImageDiffusion)
+- **IRIS: Inverse Rendering of Indoor Scenes from Low Dynamic Range Images**. [![arXiv](https://img.shields.io/badge/arXiv-2401.12977-b31b1b.svg)](https://arxiv.org/abs/2401.12977) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://irisldr.github.io/)
+- **DiLightNet: Fine-grained Lighting Control for Diffusion-based Image Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2402.11929-b31b1b.svg)](https://arxiv.org/abs/2402.11929) [![Code](https://img.shields.io/github/stars/iamNCJ/DiLightNet?style=flat&logo=github&label=Code&color=green)](https://github.com/iamNCJ/DiLightNet)
+- **LightIt: Illumination Modeling and Control for Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2403.10615-b31b1b.svg)](https://arxiv.org/abs/2403.10615)
+- **RGB↔X: Image Decomposition and Synthesis Using Material- and Lighting-aware Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2405.00666-b31b1b.svg)](https://arxiv.org/abs/2405.00666) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://zheng95z.github.io/publications/rgbx24) [![Code](https://img.shields.io/github/stars/zheng95z/rgbx?style=flat&logo=github&label=Code&color=green)](https://github.com/zheng95z/rgbx)
+- **Scaling In-the-Wild Training for Diffusion-based Illumination Harmonization and Editing**. [![Paper](https://img.shields.io/badge/Paper-ICLR2025-red.svg)](https://openreview.net/forum?id=u1cQYxRI1H) [![Code](https://img.shields.io/github/stars/lllyasviel/IC-Light?style=flat&logo=github&label=Code&color=green)](https://github.com/lllyasviel/IC-Light)
+- **Latent Intrinsics Emerge from Training to Relight**. [![arXiv](https://img.shields.io/badge/arXiv-2405.21074-b31b1b.svg)](https://arxiv.org/abs/2405.21074) [![Code](https://img.shields.io/github/stars/xyxingx/LumiNet?style=flat&logo=github&label=Code&color=green)](https://github.com/xyxingx/LumiNet)
+- **Relighting from a Single Image: Datasets and Deep Intrinsic-based Architecture**. [![arXiv](https://img.shields.io/badge/arXiv-2409.18770-b31b1b.svg)](https://arxiv.org/abs/2409.18770) [![Code](https://img.shields.io/github/stars/CVC-CIC/DeepIntrinsicRelighting?style=flat&logo=github&label=Code&color=green)](https://github.com/CVC-CIC/DeepIntrinsicRelighting)
+- **Noise Crystallization and Liquid Noise: Zero-shot Video Generation using Image Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2410.05322-b31b1b.svg)](https://arxiv.org/abs/2410.05322) [![Code](https://img.shields.io/github/stars/Strikewind/LiquidNoise?style=flat&logo=github&label=Code&color=green)](https://github.com/Strikewind/LiquidNoise)
+- **Diffusion Self-Distillation for Zero-Shot Customized Image Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2411.18616-b31b1b.svg)](https://arxiv.org/abs/2411.18616) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://primecai.github.io/dsd/) [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/primecai/diffusion-self-distillation) [![Code](https://img.shields.io/github/stars/primecai/diffusion-self-distillation?style=flat&logo=github&label=Code&color=green)](https://github.com/primecai/diffusion-self-distillation)
+- **ScribbleLight: Single Image Indoor Relighting with Scribbles**. [![arXiv](https://img.shields.io/badge/arXiv-2411.17696-b31b1b.svg)](https://arxiv.org/abs/2411.17696)
+- **LumiNet: Latent Intrinsics Meets Diffusion Models for Indoor Scene Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2412.00177-b31b1b.svg)](https://arxiv.org/abs/2412.00177) [![Code](https://img.shields.io/github/stars/xyxingx/LumiNet?style=flat&logo=github&label=Code&color=green)](https://github.com/xyxingx/LumiNet)
+- **LuminaBrush: Illumination Drawing Tools for Text-to-Image Diffusion Models**. [![Code](https://img.shields.io/github/stars/lllyasviel/LuminaBrush?style=flat&logo=github&label=Code&color=green)](https://github.com/lllyasviel/LuminaBrush)
+- **GenLit: Reformulating Single-Image Relighting as Video Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2412.11224-b31b1b.svg)](https://arxiv.org/abs/2412.11224)
+- **Uni-Renderer: Unifying Rendering and Inverse Rendering Via Dual Stream Diffusion**. [![arXiv](https://img.shields.io/badge/arXiv-2412.15050-b31b1b.svg)](https://arxiv.org/abs/2412.15050) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yuevii.github.io/unirenderer-page/) [![Code](https://img.shields.io/github/stars/EnVision-Research/Uni-Renderer?style=flat&logo=github&label=Code&color=green)](https://github.com/EnVision-Research/Uni-Renderer)
+- **Materialist: Physically Based Editing Using Single-Image Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2501.03717-b31b1b.svg)](https://arxiv.org/abs/2501.03717) [![Code](https://img.shields.io/github/stars/lez-s/Materialist?style=flat&logo=github&label=Code&color=green)](https://github.com/lez-s/Materialist)
+- **LBM: Latent Bridge Matching for Fast Image-to-Image Translation**. [![arXiv](https://img.shields.io/badge/arXiv-2503.07535-b31b1b.svg)](https://arxiv.org/abs/2503.07535) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://gojasper.github.io/latent-bridge-matching/) [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/jasperai/LBM_relighting) [![Code](https://img.shields.io/github/stars/gojasper/LBM?style=flat&logo=github&label=Code&color=green)](https://github.com/gojasper/LBM)
+- **ChildlikeSHAPES: Semantic Hierarchical Region Parsing for Animating Figure Drawings**. [![arXiv](https://img.shields.io/badge/arXiv-2504.08022-b31b1b.svg)](https://arxiv.org/abs/2504.08022)
+- **LightLab: Controlling Light Sources in Images with Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2505.09608-b31b1b.svg)](https://arxiv.org/abs/2505.09608) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://nadmag.github.io/LightLab/)
+- **SAIL: Self-supervised Albedo Estimation from Real Images with a Latent Diffusion Model**. [![arXiv](https://img.shields.io/badge/arXiv-2505.19751-b31b1b.svg)](https://arxiv.org/abs/2505.19751)
+- **DreamLight: Towards Harmonious and Consistent Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2506.14549-b31b1b.svg)](https://arxiv.org/abs/2506.14549) [![Code](https://img.shields.io/github/stars/yongliu20/DreamLight?style=flat&logo=github&label=Code&color=green)](https://github.com/yongliu20/DreamLight)
+- **Physically Controllable Relighting of Photographs**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2025-red.svg)](https://yaksoy.github.io/papers/SIG25-PhysicalRelighting.pdf) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yaksoy.github.io/PhysicalRelighting/)
+- **TransLight: Image-Guided Customized Lighting Control with Generative Decoupling**. [![arXiv](https://img.shields.io/badge/arXiv-2508.14814-b31b1b.svg)](https://arxiv.org/abs/2508.14814)
+- **PractiLight: Practical Light Control Using Foundational Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2509.01837-b31b1b.svg)](https://arxiv.org/abs/2509.01837)
+- **V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties**. [![arXiv](https://img.shields.io/badge/arXiv-2512.11799-b31b1b.svg)](https://arxiv.org/abs/2512.11799)
+- **Training-Free Multi-View Extension of IC-Light for Textual Position-Aware Scene Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2511.13684-b31b1b.svg)](https://arxiv.org/abs/2511.13684)
+- **SyncLight: Controllable and Consistent Multi-View Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2601.16981-b31b1b.svg)](https://arxiv.org/abs/2601.16981)
+- **PI-Light: Physics-Inspired Diffusion for Full-Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2601.22135-b31b1b.svg)](https://arxiv.org/abs/2601.22135)
+- **Joint Shadow Generation and Relighting via Light-Geometry Interaction Maps**. [![arXiv](https://img.shields.io/badge/arXiv-2602.21820-b31b1b.svg)](https://arxiv.org/abs/2602.21820)
+- **Learning Latent Proxies for Controllable Single-Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2603.15555-b31b1b.svg)](https://arxiv.org/abs/2603.15555)
+- **LightMover: Generative Light Movement with Color and Intensity Controls**. [![arXiv](https://img.shields.io/badge/arXiv-2603.27209-b31b1b.svg)](https://arxiv.org/abs/2603.27209)
+- **TokenLight: Precise Lighting Control in Images using Attribute Tokens**. [![arXiv](https://img.shields.io/badge/arXiv-2604.15310-b31b1b.svg)](https://arxiv.org/abs/2604.15310)
+- **AD-Relight: Training-Free Banner Relighting via Illumination Translation with Diffusion Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2604.24407-b31b1b.svg)](https://arxiv.org/abs/2604.24407)
+- **Learning Illumination Control in Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2604.24877-b31b1b.svg)](https://arxiv.org/abs/2604.24877)
+
+---
+
+## Video Relighting
+
+- **Neural Video Portrait Relighting in Real-time via Consistency Modeling**. [![arXiv](https://img.shields.io/badge/arXiv-2104.00484-b31b1b.svg)](https://arxiv.org/abs/2104.00484) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://zhanglongwen.com/projects/nvpr/) [![Code](https://img.shields.io/github/stars/ZoneLikeWonderland/Neural-Video-Portrait-Relighting-in-Real-time-via-Consistency-Modeling?style=flat&logo=github&label=Code&color=green)](https://github.com/ZoneLikeWonderland/Neural-Video-Portrait-Relighting-in-Real-time-via-Consistency-Modeling)
+- **Personalized Video Relighting With an At-Home Light Stage**. [![arXiv](https://img.shields.io/badge/arXiv-2311.08843-b31b1b.svg)](https://arxiv.org/abs/2311.08843) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://chedgekorea.github.io/relighting/)
+- **EdgeRelight360: Text-Conditioned 360-Degree HDR Image Generation for Real-Time On-Device Video Portrait Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2404.09918-b31b1b.svg)](https://arxiv.org/abs/2404.09918)
+- **LumiSculpt: A Consistency Lighting Control Network for Video Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2410.22979-b31b1b.svg)](https://arxiv.org/abs/2410.22979)
+- **RelightVid: Temporal-Consistent Diffusion Model for Video Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2501.16330-b31b1b.svg)](https://arxiv.org/abs/2501.16330) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://aleafy.github.io/relightvid/) [![Code](https://img.shields.io/github/stars/Aleafy/RelightVid?style=flat&logo=github&label=Code&color=green)](https://github.com/Aleafy/RelightVid)
+- **DiffusionRenderer: Neural Inverse and Forward Rendering with Video Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2501.18590-b31b1b.svg)](https://arxiv.org/abs/2501.18590)
+- **VidCRAFT3: Camera, Object, and Lighting Control for Image-to-Video Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2502.07531-b31b1b.svg)](https://arxiv.org/abs/2502.07531)
+- **Light-A-Video: Training-free Video Relighting via Progressive Light Fusion**. [![arXiv](https://img.shields.io/badge/arXiv-2502.08590-b31b1b.svg)](https://arxiv.org/abs/2502.08590) [![Code](https://img.shields.io/github/stars/bcmi/Light-A-Video?style=flat&logo=github&label=Code&color=green)](https://github.com/bcmi/Light-A-Video)
+- **High-Fidelity Relightable Monocular Portrait Animation with Lighting-Controllable Video Diffusion Model**. [![arXiv](https://img.shields.io/badge/arXiv-2502.19894-b31b1b.svg)](https://arxiv.org/abs/2502.19894) [![Code](https://img.shields.io/github/stars/MingtaoGuo/Relightable-Portrait-Animation?style=flat&logo=github&label=Code&color=green)](https://github.com/MingtaoGuo/Relightable-Portrait-Animation)
+- **Lux Post Facto: Learning Portrait Performance Relighting with Conditional Video Diffusion and a Hybrid Dataset**. [![arXiv](https://img.shields.io/badge/arXiv-2503.14485-b31b1b.svg)](https://arxiv.org/abs/2503.14485) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yiqunmei.net/lux-web/)
+- **Follow Your Motion: A Generic Temporal Consistency Portrait Editing Framework with Trajectory Guidance**. [![arXiv](https://img.shields.io/badge/arXiv-2503.22225-b31b1b.svg)](https://arxiv.org/abs/2503.22225) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://anonymous-hub1127.github.io/FYM.github.io/)
+- **IllumiCraft: Unified Geometry and Illumination Diffusion for Controllable Video Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2506.03150-b31b1b.svg)](https://arxiv.org/abs/2506.03150) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yuanze-lin.me/IllumiCraft_page/) [![Code](https://img.shields.io/github/stars/yuanze-lin/IllumiCraft?style=flat&logo=github&label=Code&color=green)](https://github.com/yuanze-lin/IllumiCraft)
+- **UniRelight: Learning Joint Decomposition and Synthesis for Video Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2506.15673-b31b1b.svg)](https://arxiv.org/abs/2506.15673) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://research.nvidia.com/labs/toronto-ai/UniRelight/)
+- **TC-Light: Temporally Coherent Generative Rendering for Realistic World Transfer**. [![arXiv](https://img.shields.io/badge/arXiv-2506.18904-b31b1b.svg)](https://arxiv.org/abs/2506.18904) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://dekuliutesla.github.io/tclight/) [![Code](https://img.shields.io/github/stars/Linketic/TC-Light?style=flat&logo=github&label=Code&color=green)](https://github.com/Linketic/TC-Light)
+- **Lumen: Consistent Video Relighting and Harmonious Background Replacement with Video Generative Models**. [![arXiv](https://img.shields.io/badge/arXiv-2508.12945-b31b1b.svg)](https://arxiv.org/abs/2508.12945)
+- **ReLumix: Extending Image Relighting to Video via Video Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2509.23769-b31b1b.svg)](https://arxiv.org/abs/2509.23769)
+- **Yesnt: Are Diffusion Relighting Models Ready for Capture Stage Compositing? A Hybrid Alternative to Bridge the Gap**. [![arXiv](https://img.shields.io/badge/arXiv-2510.23494-b31b1b.svg)](https://arxiv.org/abs/2510.23494)
+- **UniLumos: Fast and Unified Image and Video Relighting with Physics-Plausible Feedback**. [![arXiv](https://img.shields.io/badge/arXiv-2511.01678-b31b1b.svg)](https://arxiv.org/abs/2511.01678) [![Code](https://img.shields.io/github/stars/alibaba-damo-academy/Lumos-Custom?style=flat&logo=github&label=Code&color=green)](https://github.com/alibaba-damo-academy/Lumos-Custom)
+- **RelightMaster: Precise Video Relighting with Multi-plane Light Images**. [![arXiv](https://img.shields.io/badge/arXiv-2511.06271-b31b1b.svg)](https://arxiv.org/abs/2511.06271)
+- **FlowPortal: Residual-Corrected Flow for Training-Free Video Relighting and Background Replacement**. [![arXiv](https://img.shields.io/badge/arXiv-2511.18346-b31b1b.svg)](https://arxiv.org/abs/2511.18346)
+- **Light-X: Generative 4D Video Rendering with Camera and Illumination Control**. [![arXiv](https://img.shields.io/badge/arXiv-2512.05115-b31b1b.svg)](https://arxiv.org/abs/2512.05115)
+- **Hi-Light: A Path to high-fidelity, high-resolution video relighting with a Novel Evaluation Paradigm**. [![arXiv](https://img.shields.io/badge/arXiv-2601.23167-b31b1b.svg)](https://arxiv.org/abs/2601.23167)
+- **Light4D: Training-Free Extreme Viewpoint 4D Video Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2602.11769-b31b1b.svg)](https://arxiv.org/abs/2602.11769)
+- **LightCtrl: Training-free Controllable Video Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2603.27083-b31b1b.svg)](https://arxiv.org/abs/2603.27083)
+- **Relit-LiVE: Relight Video by Jointly Learning Environment Video**. [![arXiv](https://img.shields.io/badge/arXiv-2605.06658-b31b1b.svg)](https://arxiv.org/abs/2605.06658)
+
+---
+
+## Portrait, Face, and Human Relighting
+
+### Portrait and Face Image Relighting
+
+- **Single Image Portrait Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-1905.00824-b31b1b.svg)](https://arxiv.org/abs/1905.00824)
+- **Deep Single-Image Portrait Relighting**. [![Paper](https://img.shields.io/badge/Paper-ICCV2019-red.svg)](https://openaccess.thecvf.com/content_ICCV_2019/papers/Zhou_Deep_Single-Image_Portrait_Relighting_ICCV_2019_paper.pdf) [![Code](https://img.shields.io/github/stars/zhhoper/DPR?style=flat&logo=github&label=Code&color=green)](https://github.com/zhhoper/DPR)
+- **Learning Physics-guided Face Relighting under Directional Light**. [![arXiv](https://img.shields.io/badge/arXiv-1906.03355-b31b1b.svg)](https://arxiv.org/abs/1906.03355)
+- **Single Image Portrait Relighting via Explicit Multiple Reflectance Channel Modeling**. [![Paper](https://img.shields.io/badge/Paper-SIGA2020-red.svg)](https://dl.acm.org/doi/10.1145/3414685.3417824)
+- **Total Relighting: Learning to Relight Portraits for Background Replacement**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2021-red.svg)](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)
+- **Towards High Fidelity Face Relighting with Realistic Shadows**. [![arXiv](https://img.shields.io/badge/arXiv-2104.00825-b31b1b.svg)](https://arxiv.org/abs/2104.00825) [![Website](https://img.shields.io/badge/Website-Link-blue)](http://cvlab.cse.msu.edu/project-shadowmask.html) [![Code](https://img.shields.io/github/stars/andrewhou1/Shadow-Mask-Face-Relighting?style=flat&logo=github&label=Code&color=green)](https://github.com/andrewhou1/Shadow-Mask-Face-Relighting)
+- **Face Relighting with Geometrically Consistent Shadows**. [![arXiv](https://img.shields.io/badge/arXiv-2203.16681-b31b1b.svg)](https://arxiv.org/abs/2203.16681) [![Website](https://img.shields.io/badge/Website-Link-blue)](http://cvlab.cse.msu.edu/project-geomconsshadows.html) [![Code](https://img.shields.io/github/stars/andrewhou1/GeomConsistentFR?style=flat&logo=github&label=Code&color=green)](https://github.com/andrewhou1/GeomConsistentFR)
+- **LightPainter: Interactive Portrait Relighting with Freehand Scribble**. [![arXiv](https://img.shields.io/badge/arXiv-2303.12950-b31b1b.svg)](https://arxiv.org/abs/2303.12950) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yiqunmei.net/lightpt/)
+- **DiFaReli: Diffusion Face Relighting**. [![Paper](https://img.shields.io/badge/Paper-ICCV2023-red.svg)](https://openaccess.thecvf.com/content/ICCV2023/papers/Ponglertnapakorn_DiFaReli_Diffusion_Face_Relighting_ICCV_2023_paper.pdf) [![Code](https://img.shields.io/github/stars/diffusion-face-relighting/difareli_code?style=flat&logo=github&label=Code&color=green)](https://github.com/diffusion-face-relighting/difareli_code)
+- **DiFaReli++: Diffusion Face Relighting with Consistent Cast Shadows**. [![arXiv](https://img.shields.io/badge/arXiv-2304.09479-b31b1b.svg)](https://arxiv.org/abs/2304.09479) [![Code](https://img.shields.io/github/stars/diffusion-face-relighting/difareli_code?style=flat&logo=github&label=Code&color=green)](https://github.com/diffusion-face-relighting/difareli_code)
+- **SwitchLight: Co-design of Physics-driven Architecture and Pre-training Framework for Human Portrait Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2402.18848-b31b1b.svg)](https://arxiv.org/abs/2402.18848)
+- **Holo-Relighting: Controllable Volumetric Portrait Relighting from a Single Image**. [![arXiv](https://img.shields.io/badge/arXiv-2403.09632-b31b1b.svg)](https://arxiv.org/abs/2403.09632) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yiqunmei.net/holo-web/)
+- **Lite2Relight: 3D-aware Single Image Portrait Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2407.10487-b31b1b.svg)](https://arxiv.org/abs/2407.10487)
+- **Relightful Harmonization: Lighting-aware Portrait Background Replacement**. [![arXiv](https://img.shields.io/badge/arXiv-2312.06886-b31b1b.svg)](https://arxiv.org/abs/2312.06886)
+- **Text2Relight: Creative Portrait Relighting with Text Guidance**. [![arXiv](https://img.shields.io/badge/arXiv-2412.13734-b31b1b.svg)](https://arxiv.org/abs/2412.13734)
+- **SynthLight: Portrait Relighting with Diffusion Model by Learning to Re-render Synthetic Faces**. [![arXiv](https://img.shields.io/badge/arXiv-2501.09756-b31b1b.svg)](https://arxiv.org/abs/2501.09756)
+- **Joint Learning of Depth and Appearance for Portrait Image Animation**. [![arXiv](https://img.shields.io/badge/arXiv-2501.08649-b31b1b.svg)](https://arxiv.org/abs/2501.08649)
+- **IC-Portrait: In-Context Matching for View-Consistent Personalized Portrait Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2501.17159-b31b1b.svg)](https://arxiv.org/abs/2501.17159)
+- **3DPR: Single Image 3D Portrait Relight using Generative Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2510.15846-b31b1b.svg)](https://arxiv.org/abs/2510.15846)
+- **Light Up Your Face: A Physically Consistent Dataset and Diffusion Model for Face Fill-Light Enhancement**. [![arXiv](https://img.shields.io/badge/arXiv-2602.04300-b31b1b.svg)](https://arxiv.org/abs/2602.04300)
+- **Toward Real-World Adoption of Portrait Relighting via Hybrid Domain Knowledge Fusion**. [![arXiv](https://img.shields.io/badge/arXiv-2604.23094-b31b1b.svg)](https://arxiv.org/abs/2604.23094)
+
+### Full-body Human Relighting and Harmonization
+
+- **Relighting Humans in the Wild: Monocular Full-Body Human Relighting with Domain Adaptation**. [![arXiv](https://img.shields.io/badge/arXiv-2110.07272-b31b1b.svg)](https://arxiv.org/abs/2110.07272) [![Code](https://img.shields.io/github/stars/majita06/Relighting_in_the_Wild?style=flat&logo=github&label=Code&color=green)](https://github.com/majita06/Relighting_in_the_Wild)
+- **Geometry-aware Single-image Full-body Human Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2207.04750-b31b1b.svg)](https://arxiv.org/abs/2207.04750) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://jcn16.github.io/jcn.github.io/Relighting/)
+- **Lumos: Learning to Relight Portrait Images via a Virtual Light Stage and Synthetic-to-Real Adaptation**. [![arXiv](https://img.shields.io/badge/arXiv-2209.10510-b31b1b.svg)](https://arxiv.org/abs/2209.10510)
+- **COMPOSE: Comprehensive Portrait Shadow Editing**. [![arXiv](https://img.shields.io/badge/arXiv-2408.13922-b31b1b.svg)](https://arxiv.org/abs/2408.13922)
+- **Portrait Video Editing Empowered by Multimodal Generative Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2409.13591-b31b1b.svg)](https://arxiv.org/abs/2409.13591) [![Code](https://img.shields.io/github/stars/USTC3DV/PortraitGen-code?style=flat&logo=github&label=Code&color=green)](https://github.com/USTC3DV/PortraitGen-code)
+- **DifFRelight: Diffusion-Based Facial Performance Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2410.08188-b31b1b.svg)](https://arxiv.org/abs/2410.08188)
+- **Generative Portrait Shadow Removal**. [![arXiv](https://img.shields.io/badge/arXiv-2410.05525-b31b1b.svg)](https://arxiv.org/abs/2410.05525)
+- **All-frequency Full-body Human Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2411.00356-b31b1b.svg)](https://arxiv.org/abs/2411.00356)
+- **GroomLight: Hybrid Inverse Rendering for Relightable Human Hair Appearance Modeling**. [![arXiv](https://img.shields.io/badge/arXiv-2503.10597-b31b1b.svg)](https://arxiv.org/abs/2503.10597) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://syntec-research.github.io/GroomLight/)
+- **Comprehensive Relighting: Generalizable and Consistent Monocular Human Relighting and Harmonization**. [![arXiv](https://img.shields.io/badge/arXiv-2504.03011-b31b1b.svg)](https://arxiv.org/abs/2504.03011) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://junyingw.github.io/paper/relighting/index.html)
+- **FashionPose: Text to Pose to Relight Image Generation for Personalized Fashion Visualization**. [![arXiv](https://img.shields.io/badge/arXiv-2507.13311-b31b1b.svg)](https://arxiv.org/abs/2507.13311)
+
+---
+
+## 3D, NeRF, Gaussian, and Object Relighting
+
+- **Lasagna: Layered Score Distillation for Disentangled Object Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2312.00833-b31b1b.svg)](https://arxiv.org/abs/2312.00833) [![Code](https://img.shields.io/github/stars/dbash/lasagna?style=flat&logo=github&label=Code&color=green)](https://github.com/dbash/lasagna)
+- **Neural Gaffer: Relighting Any Object via Diffusion**. [![arXiv](https://img.shields.io/badge/arXiv-2406.07520-b31b1b.svg)](https://arxiv.org/abs/2406.07520) [![Code](https://img.shields.io/github/stars/Haian-Jin/Neural_Gaffer?style=flat&logo=github&label=Code&color=green)](https://github.com/Haian-Jin/Neural_Gaffer)
+- **CFDiffusion: Controllable Foreground Relighting in Image Compositing via Diffusion Model**. [![Paper](https://img.shields.io/badge/Paper-ACMMM2024-red.svg)](https://dl.acm.org/doi/10.1145/3664647.3681283)
+- **SpotLight: Shadow-Guided Object Relighting via Diffusion**. [![arXiv](https://img.shields.io/badge/arXiv-2411.18665-b31b1b.svg)](https://arxiv.org/abs/2411.18665)
+- **Neural LightRig: Unlocking Accurate Object Normal and Material Estimation with Multi-Light Diffusion**. [![arXiv](https://img.shields.io/badge/arXiv-2412.09593-b31b1b.svg)](https://arxiv.org/abs/2412.09593) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://projects.zxhezexin.com/neural-lightrig/) [![Code](https://img.shields.io/github/stars/ZexinHe/Neural-LightRig?style=flat&logo=github&label=Code&color=green)](https://github.com/ZexinHe/Neural-LightRig)
+- **TranSplat: Lighting-Consistent Cross-Scene Object Transfer with 3D Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2503.22676-b31b1b.svg)](https://arxiv.org/abs/2503.22676)
+- **RGS-DR: Reflective Gaussian Surfels with Deferred Rendering for Shiny Objects**. [![arXiv](https://img.shields.io/badge/arXiv-2504.18468-b31b1b.svg)](https://arxiv.org/abs/2504.18468)
+- **LightSwitch: Multi-view Relighting with Material-guided Diffusion**. [![arXiv](https://img.shields.io/badge/arXiv-2508.06494-b31b1b.svg)](https://arxiv.org/abs/2508.06494) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yehonathanlitman.github.io/light_switch/) [![Code](https://img.shields.io/github/stars/yehonathanlitman/LightSwitch?style=flat&logo=github&label=Code&color=green)](https://github.com/yehonathanlitman/LightSwitch)
+- **Gaussian Splatting with Discretized SDF for Relightable Assets**. [![arXiv](https://img.shields.io/badge/arXiv-2507.15629-b31b1b.svg)](https://arxiv.org/abs/2507.15629) [![Code](https://img.shields.io/github/stars/NK-CS-ZZL/DiscretizedSDF?style=flat&logo=github&label=Code&color=green)](https://github.com/NK-CS-ZZL/DiscretizedSDF)
+- **ROGR: Relightable 3D Objects using Generative Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2510.03163-b31b1b.svg)](https://arxiv.org/abs/2510.03163) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://tangjiapeng.github.io/ROGR/)
+- **Spec-Gloss Surfels and Normal-Diffuse Priors for Relightable Glossy Objects**. [![arXiv](https://img.shields.io/badge/arXiv-2510.02069-b31b1b.svg)](https://arxiv.org/abs/2510.02069)
+- **ComGS: Efficient 3D Object-Scene Composition via Surface Octahedral Probes**. [![arXiv](https://img.shields.io/badge/arXiv-2510.07729-b31b1b.svg)](https://arxiv.org/abs/2510.07729)
+- **OLATverse: A Large-scale Real-world Object Dataset with Precise Lighting Control**. [![arXiv](https://img.shields.io/badge/arXiv-2511.02483-b31b1b.svg)](https://arxiv.org/abs/2511.02483)
+- **Learning Projective Shadow Textures for Neural Rendering of Human Cast Shadows from Silhouettes**. [![Paper](https://img.shields.io/badge/Paper-EGSR2023-red.svg)](https://diglib.eg.org/handle/10.2312/sr20231125) [![Dataset](https://img.shields.io/badge/Dataset-Link-purple)](https://www.cvssp.org/data/crh)
+- **NeRFFaceLighting: Implicit and Disentangled Face Lighting Representation Leveraging Generative Prior in Neural Radiance Fields**. [![Paper](https://img.shields.io/badge/Paper-TOG2023-red.svg)](https://dl.acm.org/doi/10.1145/3597300) [![Website](https://img.shields.io/badge/Website-Link-blue)](http://www.geometrylearning.com/NeRFFaceLighting/) [![Code](https://img.shields.io/github/stars/IGLICT/NeRFFaceLighting?style=flat&logo=github&label=Code&color=green)](https://github.com/IGLICT/NeRFFaceLighting)
+- **Relightable and Animatable Neural Avatar from Sparse-View Video**. [![arXiv](https://img.shields.io/badge/arXiv-2308.07903-b31b1b.svg)](https://arxiv.org/abs/2308.07903) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://zju3dv.github.io/relightable_avatar) [![Code](https://img.shields.io/github/stars/zju3dv/RelightableAvatar?style=flat&logo=github&label=Code&color=green)](https://github.com/zju3dv/RelightableAvatar)
+- **Relightable and Animatable Neural Avatars from Videos**. [![arXiv](https://img.shields.io/badge/arXiv-2312.12877-b31b1b.svg)](https://arxiv.org/abs/2312.12877) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://wenbin-lin.github.io/RelightableAvatar-page/) [![Code](https://img.shields.io/github/stars/wenbin-lin/RelightableAvatar?style=flat&logo=github&label=Code&color=green)](https://github.com/wenbin-lin/RelightableAvatar)
+- **Relightable Neural Actor with Intrinsic Decomposition and Pose Control**. [![arXiv](https://img.shields.io/badge/arXiv-2312.11587-b31b1b.svg)](https://arxiv.org/abs/2312.11587) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://vcai.mpi-inf.mpg.de/projects/RNA/) [![Code](https://img.shields.io/github/stars/dluvizon/relightable-neural-actor?style=flat&logo=github&label=Code&color=green)](https://github.com/dluvizon/relightable-neural-actor)
+- **Relightable Gaussian Codec Avatars**. [![arXiv](https://img.shields.io/badge/arXiv-2312.03704-b31b1b.svg)](https://arxiv.org/abs/2312.03704) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://shunsukesaito.github.io/rgca/) [![Code](https://img.shields.io/github/stars/facebookresearch/goliath?style=flat&logo=github&label=Code&color=green)](https://github.com/facebookresearch/goliath)
+- **Real-time 3D-aware Portrait Video Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2410.18355-b31b1b.svg)](https://arxiv.org/abs/2410.18355) [![Code](https://img.shields.io/github/stars/GhostCai/PortraitRelighting?style=flat&logo=github&label=Code&color=green)](https://github.com/GhostCai/PortraitRelighting)
+- **IllumiNeRF: 3D Relighting Without Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2406.06527-b31b1b.svg)](https://arxiv.org/abs/2406.06527) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://illuminerf.github.io/) [![Code](https://img.shields.io/github/stars/illuminerf/illuminerf_results?style=flat&logo=github&label=Code&color=green)](https://github.com/illuminerf/illuminerf_results)
+- **Learning Self-Shadowing for Clothed Human Bodies**. [![Paper](https://img.shields.io/badge/Paper-EGSR2024-red.svg)](https://diglib.eg.org/handle/10.2312/sr20241159) [![Code](https://img.shields.io/badge/Code-GitLab-orange)](https://gitlab.surrey.ac.uk/fe00135/self-shadowing)
+- **Instant Facial Gaussians Translator for Relightable and Interactable Facial Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2409.07441-b31b1b.svg)](https://arxiv.org/abs/2409.07441) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://dafei-qin.github.io/TransGS.github.io/)
+- **URAvatar: Universal Relightable Gaussian Codec Avatars**. [![arXiv](https://img.shields.io/badge/arXiv-2410.24223-b31b1b.svg)](https://arxiv.org/abs/2410.24223) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://junxuan-li.github.io/urgca-website/)
+- **Relightable Full-Body Gaussian Codec Avatars**. [![arXiv](https://img.shields.io/badge/arXiv-2501.14726-b31b1b.svg)](https://arxiv.org/abs/2501.14726) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://neuralbodies.github.io/RFGCA/)
+- **BEAM: Bridging Physically-based Rendering and Gaussian Modeling for Relightable Volumetric Video**. [![arXiv](https://img.shields.io/badge/arXiv-2502.08297-b31b1b.svg)](https://arxiv.org/abs/2502.08297)
+- **HRAvatar: High-Quality and Relightable Gaussian Head Avatar**. [![arXiv](https://img.shields.io/badge/arXiv-2503.08224-b31b1b.svg)](https://arxiv.org/abs/2503.08224) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://eastbeanzhang.github.io/HRAvatar/) [![Code](https://img.shields.io/github/stars/Pixel-Talk/HRAvatar?style=flat&logo=github&label=Code&color=green)](https://github.com/Pixel-Talk/HRAvatar)
+- **Fast and Physically-based Neural Explicit Surface for Relightable Human Avatars**. [![arXiv](https://img.shields.io/badge/arXiv-2503.18408-b31b1b.svg)](https://arxiv.org/abs/2503.18408)
+- **DNF-Avatar: Distilling Neural Fields for Real-time Animatable Avatar Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2504.10486-b31b1b.svg)](https://arxiv.org/abs/2504.10486) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://jzr99.github.io/DNF-Avatar/) [![Code](https://img.shields.io/github/stars/jzr99/DNF-Avatar?style=flat&logo=github&label=Code&color=green)](https://github.com/jzr99/DNF-Avatar)
+- **LightHeadEd: Relightable & Editable Head Avatars from a Smartphone**. [![arXiv](https://img.shields.io/badge/arXiv-2504.09671-b31b1b.svg)](https://arxiv.org/abs/2504.09671)
+- **Total-Editing: Head Avatar with Editable Appearance, Motion, and Lighting**. [![arXiv](https://img.shields.io/badge/arXiv-2505.20582-b31b1b.svg)](https://arxiv.org/abs/2505.20582)
+- **Generalizable and Relightable Gaussian Splatting for Human Novel View Synthesis**. [![arXiv](https://img.shields.io/badge/arXiv-2505.21502-b31b1b.svg)](https://arxiv.org/abs/2505.21502) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://sypj-98.github.io/grgs/)
+- **BecomingLit: Relightable Gaussian Avatars with Hybrid Neural Shading**. [![arXiv](https://img.shields.io/badge/arXiv-2506.06271-b31b1b.svg)](https://arxiv.org/abs/2506.06271) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://jonathsch.github.io/becominglit/)
+- **GSHeadRelight: Fast Relightability for 3D Gaussian Head Synthesis**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2025-red.svg)](https://orca.cardiff.ac.uk/id/eprint/178123/1/paper.pdf)
+- **HumanOLAT: A Large-Scale Dataset for Full-Body Human Relighting and Novel-View Synthesis**. [![arXiv](https://img.shields.io/badge/arXiv-2508.09137-b31b1b.svg)](https://arxiv.org/abs/2508.09137) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://vcai.mpi-inf.mpg.de/projects/HumanOLAT/)
+- **Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video**. [![arXiv](https://img.shields.io/badge/arXiv-2512.09335-b31b1b.svg)](https://arxiv.org/abs/2512.09335)
+- **Relightable Holoported Characters: Capturing and Relighting Dynamic Human Performance from Sparse Views**. [![arXiv](https://img.shields.io/badge/arXiv-2512.00255-b31b1b.svg)](https://arxiv.org/abs/2512.00255)
+- **GTAvatar: Bridging Gaussian Splatting and Texture Mapping for Relightable and Editable Gaussian Avatars**. [![arXiv](https://img.shields.io/badge/arXiv-2512.09162-b31b1b.svg)](https://arxiv.org/abs/2512.09162)
+- **HeadLighter: Disentangling Illumination in Generative 3D Gaussian Heads via Lightstage Captures**. [![arXiv](https://img.shields.io/badge/arXiv-2601.02103-b31b1b.svg)](https://arxiv.org/abs/2601.02103)
+- **RelightAnyone: A Generalized Relightable 3D Gaussian Head Model**. [![arXiv](https://img.shields.io/badge/arXiv-2601.03357-b31b1b.svg)](https://arxiv.org/abs/2601.03357)
+- **D-Rex: Diffusion Rendering for Relightable Expressive Avatars**. [![arXiv](https://img.shields.io/badge/arXiv-2604.27871-b31b1b.svg)](https://arxiv.org/abs/2604.27871)
+- **A Diffusion Approach to Radiance Field Relighting using Multi-Illumination Synthesis**. [![arXiv](https://img.shields.io/badge/arXiv-2409.08947-b31b1b.svg)](https://arxiv.org/abs/2409.08947) [![Code](https://img.shields.io/github/stars/graphdeco-inria/gaussian-splatting-relighting?style=flat&logo=github&label=Code&color=green)](https://github.com/graphdeco-inria/gaussian-splatting-relighting)
+- **Digital Kitchen Remodeling: Editing and Relighting Intricate Indoor Scenes from a Single Panorama**. [![arXiv](https://img.shields.io/badge/arXiv-2504.16086-b31b1b.svg)](https://arxiv.org/abs/2504.16086)
+- **Hybrelighter: Combining Deep Anisotropic Diffusion and Scene Reconstruction for On-device Real-time Relighting in Mixed Reality**. [![arXiv](https://img.shields.io/badge/arXiv-2508.14930-b31b1b.svg)](https://arxiv.org/abs/2508.14930)
+- **Relightable 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition and Ray Tracing**. [![arXiv](https://img.shields.io/badge/arXiv-2311.16043-b31b1b.svg)](https://arxiv.org/abs/2311.16043) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://nju-3dv.github.io/projects/Relightable3DGaussian/) [![Code](https://img.shields.io/github/stars/NJU-3DV/Relightable3DGaussian?style=flat&logo=github&label=Code&color=green)](https://github.com/NJU-3DV/Relightable3DGaussian)
+- **The Sky's the Limit: Re-lightable Outdoor Scenes via a Sky-pixel Constrained Illumination Prior and Outside-In Visibility**. [![arXiv](https://img.shields.io/badge/arXiv-2311.16937-b31b1b.svg)](https://arxiv.org/abs/2311.16937)
+- **RNA: Relightable Neural Assets**. [![arXiv](https://img.shields.io/badge/arXiv-2312.09398-b31b1b.svg)](https://arxiv.org/abs/2312.09398)
+- **FlashTex: Fast Relightable Mesh Texturing with LightControlNet**. [![arXiv](https://img.shields.io/badge/arXiv-2402.13251-b31b1b.svg)](https://arxiv.org/abs/2402.13251) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://flashtex.github.io/) [![Code](https://img.shields.io/github/stars/Roblox/FlashTex?style=flat&logo=github&label=Code&color=green)](https://github.com/Roblox/FlashTex)
+- **MetaGS: A Meta-Learned Gaussian-Phong Model for Out-of-Distribution 3D Scene Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2405.20791-b31b1b.svg)](https://arxiv.org/abs/2405.20791)
+- **RNG: Relightable Neural Gaussians**. [![arXiv](https://img.shields.io/badge/arXiv-2409.19702-b31b1b.svg)](https://arxiv.org/abs/2409.19702) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://whois-jiahui.fun/project_pages/RNG/index.html) [![Code](https://img.shields.io/github/stars/sssssy/RNG_release?style=flat&logo=github&label=Code&color=green)](https://github.com/sssssy/RNG_release)
+- **RelitLRM: Generative Relightable Radiance for Large Reconstruction Models**. [![arXiv](https://img.shields.io/badge/arXiv-2410.06231-b31b1b.svg)](https://arxiv.org/abs/2410.06231) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://relit-lrm.github.io/)
+- **GS^3: Efficient Relighting with Triple Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2410.11419-b31b1b.svg)](https://arxiv.org/abs/2410.11419) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://gsrelight.github.io/) [![Code](https://img.shields.io/github/stars/gsrelight/gs-relight?style=flat&logo=github&label=Code&color=green)](https://github.com/gsrelight/gs-relight)
+- **UrbanCAD: Towards Highly Controllable and Photorealistic 3D Vehicles for Urban Scene Simulation**. [![arXiv](https://img.shields.io/badge/arXiv-2411.19292-b31b1b.svg)](https://arxiv.org/abs/2411.19292) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://xdimlab.github.io/UrbanCAD/)
+- **ReCap: Better Gaussian Relighting with Cross-Environment Captures**. [![arXiv](https://img.shields.io/badge/arXiv-2412.07534-b31b1b.svg)](https://arxiv.org/abs/2412.07534) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://jingzhi.github.io/ReCap/) [![Code](https://img.shields.io/github/stars/jingzhi/ReCap?style=flat&logo=github&label=Code&color=green)](https://github.com/jingzhi/ReCap)
+- **GraphicsDreamer: Image to 3D Generation with Physical Consistency**. [![arXiv](https://img.shields.io/badge/arXiv-2412.14214-b31b1b.svg)](https://arxiv.org/abs/2412.14214)
+- **ARM: Appearance Reconstruction Model for Relightable 3D Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2411.10825-b31b1b.svg)](https://arxiv.org/abs/2411.10825) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://arm-aigc.github.io/)
+- **Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation**. [![arXiv](https://img.shields.io/badge/arXiv-2412.15211-b31b1b.svg)](https://arxiv.org/abs/2412.15211) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://relight-to-reconstruct.github.io/)
+- **IRGS: Inter-Reflective Gaussian Splatting with 2D Gaussian Ray Tracing**. [![arXiv](https://img.shields.io/badge/arXiv-2412.15867-b31b1b.svg)](https://arxiv.org/abs/2412.15867) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://fudan-zvg.github.io/IRGS/) [![Code](https://img.shields.io/github/stars/fudan-zvg/IRGS?style=flat&logo=github&label=Code&color=green)](https://github.com/fudan-zvg/IRGS)
+- **Reflective Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2412.19282-b31b1b.svg)](https://arxiv.org/abs/2412.19282) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://fudan-zvg.github.io/ref-gaussian/) [![Code](https://img.shields.io/github/stars/fudan-zvg/ref-gaussian?style=flat&logo=github&label=Code&color=green)](https://github.com/fudan-zvg/ref-gaussian)
+- **Birth and Death of a Rose**. [![arXiv](https://img.shields.io/badge/arXiv-2412.05278-b31b1b.svg)](https://arxiv.org/abs/2412.05278) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://chen-geng.com/rose4d)
+- **Beyond Reconstruction: A Physics-Based Neural Deferred Shader for Photo-realistic Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2504.12273-b31b1b.svg)](https://arxiv.org/abs/2504.12273)
+- **RenderFormer: Transformer-based Neural Rendering of Triangle Meshes with Global Illumination**. [![arXiv](https://img.shields.io/badge/arXiv-2505.21925-b31b1b.svg)](https://arxiv.org/abs/2505.21925) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://microsoft.github.io/renderformer/) [![Code](https://img.shields.io/github/stars/microsoft/renderformer?style=flat&logo=github&label=Code&color=green)](https://github.com/microsoft/renderformer)
+- **GS-2DGS: Geometrically Supervised 2DGS for Reflective Object Reconstruction**. [![arXiv](https://img.shields.io/badge/arXiv-2506.13110-b31b1b.svg)](https://arxiv.org/abs/2506.13110) [![Code](https://img.shields.io/github/stars/hirotong/GS2DGS?style=flat&logo=github&label=Code&color=green)](https://github.com/hirotong/GS2DGS)
+- **2D Triangle Splatting for Direct Differentiable Mesh Training**. [![arXiv](https://img.shields.io/badge/arXiv-2506.18575-b31b1b.svg)](https://arxiv.org/abs/2506.18575)
+- **HiNeuS: High-fidelity Neural Surface Mitigating Low-texture and Reflective Ambiguity**. [![arXiv](https://img.shields.io/badge/arXiv-2506.23854-b31b1b.svg)](https://arxiv.org/abs/2506.23854)
+- **SU-RGS: Relightable 3D Gaussian Splatting from Sparse Views under Unconstrained Illuminations**. [![Paper](https://img.shields.io/badge/Paper-ICCV2025-red.svg)](https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_SU-RGS_Relightable_3D_Gaussian_Splatting_from_Sparse_Views_under_Unconstrained_ICCV_2025_paper.pdf)
+- **GaRe: Relightable 3D Gaussian Splatting for Outdoor Scenes from Unconstrained Photo Collections**. [![arXiv](https://img.shields.io/badge/arXiv-2507.20512-b31b1b.svg)](https://arxiv.org/abs/2507.20512)
+- **GOGS: High-Fidelity Geometry and Relighting for Glossy Objects via Gaussian Surfels**. [![arXiv](https://img.shields.io/badge/arXiv-2508.14563-b31b1b.svg)](https://arxiv.org/abs/2508.14563)
+- **ROSGS: Relightable Outdoor Scenes With Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2509.11275-b31b1b.svg)](https://arxiv.org/abs/2509.11275)
+- **Differentiable Light Transport with Gaussian Surfels via Adapted Radiosity for Efficient Relighting and Geometry Reconstruction**. [![arXiv](https://img.shields.io/badge/arXiv-2509.18497-b31b1b.svg)](https://arxiv.org/abs/2509.18497)
+- **Large Material Gaussian Model for Relightable 3D Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2509.22112-b31b1b.svg)](https://arxiv.org/abs/2509.22112)
+- **COREA: Coupled Relightable 3D Gaussians and SDFs for Efficient Normal Alignment**. [![arXiv](https://img.shields.io/badge/arXiv-2512.07107-b31b1b.svg)](https://arxiv.org/abs/2512.07107)
+- **LuxRemix: Lighting Decomposition and Remixing for Indoor Scenes**. [![arXiv](https://img.shields.io/badge/arXiv-2601.15283-b31b1b.svg)](https://arxiv.org/abs/2601.15283)
+- **GR3EN: Generative Relighting for 3D Environments**. [![arXiv](https://img.shields.io/badge/arXiv-2601.16272-b31b1b.svg)](https://arxiv.org/abs/2601.16272)
+- **Radiometrically Consistent Gaussian Surfels for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2603.01491-b31b1b.svg)](https://arxiv.org/abs/2603.01491)
+- **R3GW: Relightable 3D Gaussians for Outdoor Scenes in the Wild**. [![arXiv](https://img.shields.io/badge/arXiv-2603.02801-b31b1b.svg)](https://arxiv.org/abs/2603.02801)
+- **ReLi3D: Relightable Multi-view 3D Reconstruction with Disentangled Illumination**. [![arXiv](https://img.shields.io/badge/arXiv-2603.19753-b31b1b.svg)](https://arxiv.org/abs/2603.19753)
+- **LumiMotion: Improving Gaussian Relighting with Scene Dynamics**. [![arXiv](https://img.shields.io/badge/arXiv-2604.10994-b31b1b.svg)](https://arxiv.org/abs/2604.10994)
+- **SSD-GS: Scattering and Shadow Decomposition for Relightable 3D Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2604.13333-b31b1b.svg)](https://arxiv.org/abs/2604.13333)
+- **GeoRelight: Learning Joint Geometrical Relighting and Reconstruction with Flexible Multi-Modal Diffusion Transformers**. [![arXiv](https://img.shields.io/badge/arXiv-2604.20715-b31b1b.svg)](https://arxiv.org/abs/2604.20715)
+
+---
+
+## Relighting for Driving and Robotics
+
+- **SIMBAR: Single Image-Based Scene Relighting for Effective Data Augmentation for Automated Driving Vision Tasks**. [![arXiv](https://img.shields.io/badge/arXiv-2204.00644-b31b1b.svg)](https://arxiv.org/abs/2204.00644)
+- **NPSim: Nighttime Photorealistic Simulation From Daytime Images With Monocular Inverse Rendering and Ray Tracing**. [![arXiv](https://img.shields.io/badge/arXiv-2502.10720-b31b1b.svg)](https://arxiv.org/abs/2502.10720)
+- **MADrive: Memory-Augmented Driving Scene Modeling**. [![arXiv](https://img.shields.io/badge/arXiv-2506.21520-b31b1b.svg)](https://arxiv.org/abs/2506.21520) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yandex-research.github.io/madrive/)
+- **Zero-Shot UAV Navigation in Forests via Relightable 3D Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2602.07101-b31b1b.svg)](https://arxiv.org/abs/2602.07101)
+- **Adaptive Illumination Control for Robot Perception**. [![arXiv](https://img.shields.io/badge/arXiv-2602.15900-b31b1b.svg)](https://arxiv.org/abs/2602.15900)
+
+---
+
+## Security and Robustness
+
+- **Adversarial Relighting Against Face Recognition**. [![arXiv](https://img.shields.io/badge/arXiv-2108.07920-b31b1b.svg)](https://arxiv.org/abs/2108.07920)
+- **Light as Deception: GPT-driven Natural Relighting Against Vision-Language Pre-training Models**. [![arXiv](https://img.shields.io/badge/arXiv-2505.24227-b31b1b.svg)](https://arxiv.org/abs/2505.24227)
+- **R-PGA: Robust Physical Adversarial Camouflage Generation via Relightable 3D Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2603.26067-b31b1b.svg)](https://arxiv.org/abs/2603.26067)
+
+---
+
+## Reinforcement Learning
+
+- **PR-RL: Portrait Relighting Via Deep Reinforcement Learning**. [![Paper](https://img.shields.io/badge/Paper-TMM2022-red.svg)](https://ieeexplore.ieee.org/document/9484089)
+- **BiPR-RL: Portrait Relighting via Bi-directional Consistent Deep Reinforcement Learning**. [![Paper](https://img.shields.io/badge/Paper-CVIU2024-red.svg)](https://www.sciencedirect.com/science/article/pii/S1077314223002692)
+
+---
+
+## Datasets and Benchmarks
+
+- **Objects With Lighting**: A real-world dataset for evaluating reconstruction and rendering for object relighting. [![arXiv](https://img.shields.io/badge/arXiv-2401.09126-b31b1b.svg)](https://arxiv.org/abs/2401.09126)
+- **VIDIT Dataset**: Virtual Image Dataset for Illumination Transfer, commonly used in relighting challenges. [![arXiv](https://img.shields.io/badge/arXiv-2005.05460-b31b1b.svg)](https://arxiv.org/abs/2005.05460) [![Code](https://img.shields.io/github/stars/majedelhelou/VIDIT?style=flat&logo=github&label=Dataset&color=purple)](https://github.com/majedelhelou/VIDIT)
+- **Multi-Illumination Dataset**: Indoor scenes captured under multiple lighting conditions. [![Paper](https://img.shields.io/badge/Paper-ICCV2019-red.svg)](https://openaccess.thecvf.com/content_ICCV_2019/papers/Murmann_A_Dataset_of_Multi-Illumination_Images_in_the_Wild_ICCV_2019_paper.pdf) [![Dataset](https://img.shields.io/badge/Dataset-Link-purple)](https://projects.csail.mit.edu/illumination/)
+- **DPR Dataset**: Portrait relighting data and generation scripts from Deep Single-Image Portrait Relighting. [![Code](https://img.shields.io/github/stars/zhhoper/DPR?style=flat&logo=github&label=Code&color=green)](https://github.com/zhhoper/DPR)
+- **Cast Shadow Human Dataset**: Data for learning projective shadow textures. [![Dataset](https://img.shields.io/badge/Dataset-Link-purple)](https://www.cvssp.org/data/crh)
+- **HumanOLAT**: Large-scale full-body human relighting and novel-view synthesis dataset. [![arXiv](https://img.shields.io/badge/arXiv-2508.09137-b31b1b.svg)](https://arxiv.org/abs/2508.09137) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://vcai.mpi-inf.mpg.de/projects/HumanOLAT/)
+- **OLATverse**: Large-scale real-world object dataset with precise lighting control. [![arXiv](https://img.shields.io/badge/arXiv-2511.02483-b31b1b.svg)](https://arxiv.org/abs/2511.02483)
+- **Light Up Your Face Dataset**: Physically consistent face fill-light enhancement data and diffusion baseline. [![arXiv](https://img.shields.io/badge/arXiv-2602.04300-b31b1b.svg)](https://arxiv.org/abs/2602.04300)
+
+---
+
+## Workshops and Challenges
+
+- **AIM 2020 Relighting Challenges**: Any-to-one relighting, illumination settings estimation, and any-to-any relighting. [![Any-to-one](https://img.shields.io/badge/CodaLab-Any--to--one-blue)](https://competitions.codalab.org/competitions/24671) [![Illumination estimation](https://img.shields.io/badge/CodaLab-Illumination--estimation-blue)](https://competitions.codalab.org/competitions/24773) [![Any-to-any](https://img.shields.io/badge/CodaLab-Any--to--any-blue)](https://competitions.codalab.org/competitions/24674)
+- **NTIRE 2021 Depth Guided Image Relighting**: One-to-one and any-to-any relighting tracks. [![One-to-one](https://img.shields.io/badge/CodaLab-One--to--one-blue)](https://competitions.codalab.org/competitions/28030) [![Any-to-any](https://img.shields.io/badge/CodaLab-Any--to--any-blue)](https://competitions.codalab.org/competitions/28031)
+- **NTIRE 2025 Video Quality Enhancement for Video Conferencing**. [![Website](https://img.shields.io/badge/Website-CodaLab-blue)](https://codalab.lisn.upsaclay.fr/competitions/21291)
+- **UniLight Workshop 2025**. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://unilight-workshop.github.io/unilight2025/)
+
+---
+
+## Software, Demos, and Products
+
+- **IC-Light**. [![Code](https://img.shields.io/github/stars/lllyasviel/IC-Light?style=flat&logo=github&label=Code&color=green)](https://github.com/lllyasviel/IC-Light) [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/lllyasviel/IC-Light) [![Demo](https://img.shields.io/badge/Demo-v2-yellow)](https://huggingface.co/spaces/lllyasviel/iclight-v2-vary)
+- **LBM Relighting Demo**. [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/jasperai/LBM_relighting) [![Code](https://img.shields.io/github/stars/gojasper/LBM?style=flat&logo=github&label=Code&color=green)](https://github.com/gojasper/LBM)
+- **Flux Kontext Relight**. [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/kontext-community/kontext-relight)
+- **SwitchLight**. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://www.switchlight.beeble.ai/)
+- **SwitchLight 2.0**. [![Website](https://img.shields.io/badge/App-Link-blue)](https://app.beeble.ai/home) [![Blog](https://img.shields.io/badge/Blog-Link-orange)](https://beeble.ai/research/switchlight-2-0-is-here)
+- **Clipdrop Relight**. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://clipdrop.co/relight)
+- **FreeLighting**. [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/wulongmetac/FreeLighting) [![Code](https://img.shields.io/github/stars/liuyuxuan3060/FreeLighting?style=flat&logo=github&label=Code&color=green)](https://github.com/liuyuxuan3060/FreeLighting)
+- **Adobe Project Perfect Blend**. [![Post](https://img.shields.io/badge/Post-X-black)](https://x.com/Pinsky/status/1846351993478037857)
+- **Magnific Relight**. [![Post](https://img.shields.io/badge/Post-X-black)](https://x.com/javilopen/status/1805274155065176489)
+
+---
+
+## Related Areas
+
+### Intrinsic Decomposition and Inverse Rendering
+
+- **Awesome Inverse Rendering**. [![Website](https://img.shields.io/badge/Website-GitHub-blue)](https://github.com/tkuri/Awesome-InverseRendering)
+- **InvRender: Modeling Indirect Illumination for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2204.06837-b31b1b.svg)](https://arxiv.org/abs/2204.06837) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://zju3dv.github.io/invrender/) [![Code](https://img.shields.io/github/stars/zju3dv/InvRender?style=flat&logo=github&label=Code&color=green)](https://github.com/zju3dv/InvRender)
+- **nvdiffrecmc: Shape, Light, and Material Decomposition from Images using Monte Carlo Rendering and Denoising**. [![arXiv](https://img.shields.io/badge/arXiv-2206.03380-b31b1b.svg)](https://arxiv.org/abs/2206.03380) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://nvlabs.github.io/nvdiffrecmc/) [![Code](https://img.shields.io/github/stars/NVlabs/nvdiffrecmc?style=flat&logo=github&label=Code&color=green)](https://github.com/NVlabs/nvdiffrecmc)
+- **TensoIR: Tensorial Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2304.12461-b31b1b.svg)](https://arxiv.org/abs/2304.12461) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://haian-jin.github.io/TensoIR/) [![Code](https://img.shields.io/github/stars/Haian-Jin/TensoIR?style=flat&logo=github&label=Code&color=green)](https://github.com/Haian-Jin/TensoIR)
+- **Neural-PBIR Reconstruction of Shape, Material, and Illumination**. [![arXiv](https://img.shields.io/badge/arXiv-2304.13445-b31b1b.svg)](https://arxiv.org/abs/2304.13445) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://neural-pbir.github.io/)
+- **GS-IR: 3D Gaussian Splatting for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2311.16473-b31b1b.svg)](https://arxiv.org/abs/2311.16473) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://lzhnb.github.io/project-pages/gs-ir.html) [![Code](https://img.shields.io/github/stars/lzhnb/GS-IR?style=flat&logo=github&label=Code&color=green)](https://github.com/lzhnb/GS-IR)
+- **GI-GS: Global Illumination Decomposition on Gaussian Splatting for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2410.02619-b31b1b.svg)](https://arxiv.org/abs/2410.02619) [![Code](https://img.shields.io/github/stars/stopaimme/GI-GS?style=flat&logo=github&label=Code&color=green)](https://github.com/stopaimme/GI-GS)
+- **NeISF++: Neural Incident Stokes Field for Polarized Inverse Rendering of Conductors and Dielectrics**. [![arXiv](https://img.shields.io/badge/arXiv-2411.10189-b31b1b.svg)](https://arxiv.org/abs/2411.10189) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://sony.github.io/NeISF/) [![Code](https://img.shields.io/github/stars/sony/NeISF?style=flat&logo=github&label=Code&color=green)](https://github.com/sony/NeISF)
+- **Differentiable Inverse Rendering with Interpretable Basis BRDFs**. [![arXiv](https://img.shields.io/badge/arXiv-2411.17994-b31b1b.svg)](https://arxiv.org/abs/2411.17994) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://hg-chung.github.io/Interpretable-Inverse-Rendering/) [![Code](https://img.shields.io/github/stars/hg-chung/Interpretable-Inverse-Rendering?style=flat&logo=github&label=Code&color=green)](https://github.com/hg-chung/Interpretable-Inverse-Rendering)
+- **IDArb: Intrinsic Decomposition for Arbitrary Number of Input Views and Illuminations**. [![arXiv](https://img.shields.io/badge/arXiv-2412.12083-b31b1b.svg)](https://arxiv.org/abs/2412.12083) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://lizb6626.github.io/IDArb/) [![Code](https://img.shields.io/github/stars/Lizb6626/IDArb?style=flat&logo=github&label=Code&color=green)](https://github.com/Lizb6626/IDArb)
+- **SVG-IR: Spatially-Varying Gaussian Splatting for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2504.06815-b31b1b.svg)](https://arxiv.org/abs/2504.06815)
+- **LIRM: Large Inverse Rendering Model for Progressive Reconstruction of Shape, Materials and View-dependent Radiance Fields**. [![arXiv](https://img.shields.io/badge/arXiv-2504.20026-b31b1b.svg)](https://arxiv.org/abs/2504.20026) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://lzqsd.github.io/LIRM.github.io/)
+- **IntrinsicEdit: Precise Generative Image Manipulation in Intrinsic Space**. [![arXiv](https://img.shields.io/badge/arXiv-2505.08889-b31b1b.svg)](https://arxiv.org/abs/2505.08889) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://intrinsic-edit.github.io/)
+- **Neural Inverse Rendering from Propagating Light**. [![arXiv](https://img.shields.io/badge/arXiv-2506.05347-b31b1b.svg)](https://arxiv.org/abs/2506.05347) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://anaghmalik.com/InvProp/)
+- **Light of Normals: Unified Feature Representation for Universal Photometric Stereo**. [![arXiv](https://img.shields.io/badge/arXiv-2506.18882-b31b1b.svg)](https://arxiv.org/abs/2506.18882) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://houyuanchen111.github.io/lino.github.io/) [![Code](https://img.shields.io/github/stars/houyuanchen111/LINO_UniPS?style=flat&logo=github&label=Code&color=green)](https://github.com/houyuanchen111/LINO_UniPS)
+- **Practical Inverse Rendering of Textured and Translucent Appearance**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2025-red.svg)](https://weiphil.s3.eu-central-1.amazonaws.com/practical_reconstruction.pdf) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://dvicini.github.io/practical-inverse-rendering/)
+- **MatDecompSDF: High-Fidelity 3D Shape and PBR Material Decomposition from Multi-View Images**. [![arXiv](https://img.shields.io/badge/arXiv-2507.04749-b31b1b.svg)](https://arxiv.org/abs/2507.04749)
+- **RTR-GS: 3D Gaussian Splatting for Inverse Rendering with Radiance Transfer and Reflection**. [![arXiv](https://img.shields.io/badge/arXiv-2507.07733-b31b1b.svg)](https://arxiv.org/abs/2507.07733)
+- **MERLiN: Single-Shot Material Estimation and Relighting for Photometric Stereo**. [![arXiv](https://img.shields.io/badge/arXiv-2409.00674-b31b1b.svg)](https://arxiv.org/abs/2409.00674)
+- **Phys3DGS: Physically-based 3D Gaussian Splatting for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2409.10335-b31b1b.svg)](https://arxiv.org/abs/2409.10335)
+- **MaterialFusion: Enhancing Inverse Rendering with Material Diffusion Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2409.15273-b31b1b.svg)](https://arxiv.org/abs/2409.15273)
+- **RISE-SDF: a Relightable Information-Shared Signed Distance Field for Glossy Object Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2409.20140-b31b1b.svg)](https://arxiv.org/abs/2409.20140)
+- **GeoSplatting: Towards Geometry Guided Gaussian Splatting for Physically-based Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2410.24204-b31b1b.svg)](https://arxiv.org/abs/2410.24204)
+- **GUS-IR: Gaussian Splatting with Unified Shading for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2411.07478-b31b1b.svg)](https://arxiv.org/abs/2411.07478)
+- **PS-GS: Gaussian Splatting for Multi-View Photometric Stereo**. [![arXiv](https://img.shields.io/badge/arXiv-2507.18231-b31b1b.svg)](https://arxiv.org/abs/2507.18231)
+- **UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2605.00658-b31b1b.svg)](https://arxiv.org/abs/2605.00658) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://houyuanchen111.github.io/UniVidX.github.io/) [![Model](https://img.shields.io/badge/Model-HF-yellow)](https://huggingface.co/houyuanchen/UniVidX) [![Code](https://img.shields.io/github/stars/houyuanchen111/UniVidX?style=flat&logo=github&label=Code&color=green)](https://github.com/houyuanchen111/UniVidX)
+
+### HDR Panorama Generation
+
+- **Text2Light: Zero-Shot Text-Driven HDR Panorama Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2209.09898-b31b1b.svg)](https://arxiv.org/abs/2209.09898) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://frozenburning.github.io/projects/text2light/) [![Code](https://img.shields.io/github/stars/FrozenBurning/Text2Light?style=flat&logo=github&label=Code&color=green)](https://github.com/FrozenBurning/Text2Light)
+- **LayerPano3D: Layered 3D Panorama for Hyper-Immersive Scene Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2408.13252-b31b1b.svg)](https://arxiv.org/abs/2408.13252) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://ys-imtech.github.io/projects/LayerPano3D/) [![Code](https://img.shields.io/github/stars/3DTopia/LayerPano3D?style=flat&logo=github&label=Code&color=green)](https://github.com/3DTopia/LayerPano3D)
+
+### PBR Generation
+
+- **3DTopia-XL: High-Quality 3D PBR Asset Generation via Primitive Diffusion**. [![arXiv](https://img.shields.io/badge/arXiv-2409.12957-b31b1b.svg)](https://arxiv.org/abs/2409.12957) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://3dtopia.github.io/3DTopia-XL/) [![Code](https://img.shields.io/github/stars/3DTopia/3DTopia-XL?style=flat&logo=github&label=Code&color=green)](https://github.com/3DTopia/3DTopia-XL)
+- **MCMat: Multiview-Consistent and Physically Accurate PBR Material Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2412.14148-b31b1b.svg)](https://arxiv.org/abs/2412.14148) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://lingtengqiu.github.io/2024/MCMat/) [![Code](https://img.shields.io/github/stars/aigc3d/MCMat?style=flat&logo=github&label=Code&color=green)](https://github.com/aigc3d/MCMat)
+- **IntrinsiX: High-Quality PBR Generation using Image Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2504.01008-b31b1b.svg)](https://arxiv.org/abs/2504.01008) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://peter-kocsis.github.io/IntrinsiX/)
+- **FlowIID: Single-Step Intrinsic Image Decomposition via Latent Flow Matching**. [![arXiv](https://img.shields.io/badge/arXiv-2601.12329-b31b1b.svg)](https://arxiv.org/abs/2601.12329)
+
+### Lighting Estimation
+
+- **Awesome Illumination Estimation**. [![Website](https://img.shields.io/badge/Website-GitHub-blue)](https://github.com/waldenlakes/Awesome-Illumination-Estimation)
+- **EMLight / GMLight: Lighting Estimation via Spherical and Geometric Distribution Approximation**. [![arXiv](https://img.shields.io/badge/arXiv-2012.11116-b31b1b.svg)](https://arxiv.org/abs/2012.11116) [![arXiv](https://img.shields.io/badge/arXiv-2102.10244-b31b1b.svg)](https://arxiv.org/abs/2102.10244) [![Code](https://img.shields.io/github/stars/fnzhan/EMLight?style=flat&logo=github&label=Code&color=green)](https://github.com/fnzhan/EMLight)
+- **StyleLight: HDR Panorama Generation for Lighting Estimation and Editing**. [![arXiv](https://img.shields.io/badge/arXiv-2207.14811-b31b1b.svg)](https://arxiv.org/abs/2207.14811) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://style-light.github.io/) [![Code](https://img.shields.io/github/stars/Wanggcong/StyleLight?style=flat&logo=github&label=Code&color=green)](https://github.com/Wanggcong/StyleLight)
+- **Spatiotemporally Consistent HDR Indoor Lighting Estimation**. [![arXiv](https://img.shields.io/badge/arXiv-2305.04374-b31b1b.svg)](https://arxiv.org/abs/2305.04374)
+- **DiffusionLight: Light Probes for Free by Painting a Chrome Ball**. [![arXiv](https://img.shields.io/badge/arXiv-2312.09168-b31b1b.svg)](https://arxiv.org/abs/2312.09168) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://diffusionlight.github.io/) [![Code](https://img.shields.io/github/stars/DiffusionLight/DiffusionLight?style=flat&logo=github&label=Code&color=green)](https://github.com/DiffusionLight/DiffusionLight)
+- **Towards a Perceptual Evaluation Framework for Lighting Estimation**. [![arXiv](https://img.shields.io/badge/arXiv-2312.04334-b31b1b.svg)](https://arxiv.org/abs/2312.04334) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://lvsn.github.io/PerceptionMetric/)
+- **IllumiDiff: Indoor Illumination Estimation from a Single Image with Diffusion Model**. [![Paper](https://img.shields.io/badge/Paper-TVCG2025-red.svg)](https://graphvision.whu.edu.cn/paper/2025/ShenShiYuan_TVCG_2025.pdf) [![Code](https://img.shields.io/github/stars/nauyihsnehs/IllumiDiff?style=flat&logo=github&label=Code&color=green)](https://github.com/nauyihsnehs/IllumiDiff)
+- **DiffusionLight-Turbo: Accelerated Light Probes for Free via Single-Pass Chrome Ball Inpainting**. [![arXiv](https://img.shields.io/badge/arXiv-2507.01305-b31b1b.svg)](https://arxiv.org/abs/2507.01305) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://diffusionlight.github.io/turbo/) [![Code](https://img.shields.io/github/stars/DiffusionLight/DiffusionLight-Turbo?style=flat&logo=github&label=Code&color=green)](https://github.com/DiffusionLight/DiffusionLight-Turbo)
+- **Spatiotemporally Consistent Indoor Lighting Estimation with Diffusion Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2508.08384-b31b1b.svg)](https://arxiv.org/abs/2508.08384)
+- **LuxDiT: Lighting Estimation with Video Diffusion Transformer**. [![arXiv](https://img.shields.io/badge/arXiv-2509.03680-b31b1b.svg)](https://arxiv.org/abs/2509.03680)
+- **CleAR: Robust Context-Guided Generative Lighting Estimation for Mobile Augmented Reality**. [![arXiv](https://img.shields.io/badge/arXiv-2411.02179-b31b1b.svg)](https://arxiv.org/abs/2411.02179)
+- **Lighting in Motion: Spatiotemporal HDR Lighting Estimation**. [![arXiv](https://img.shields.io/badge/arXiv-2512.13597-b31b1b.svg)](https://arxiv.org/abs/2512.13597)
+- **UniLight: A Unified Representation for Lighting**. [![arXiv](https://img.shields.io/badge/arXiv-2512.04267-b31b1b.svg)](https://arxiv.org/abs/2512.04267)
+
+---
+
+## Acknowledgements
+
+This project is built on the foundations laid by:
+
+- [Awesome-Relighting](https://github.com/tandaily/Awesome-Relighting)
+- [Awesome-World-Models](https://github.com/knightnemo/Awesome-World-Models)
+- The authors and contributors of the relighting, inverse rendering, neural rendering, and lighting-estimation projects linked above.
+
+---
+
+## Citation
+
+If you find this repository useful, please consider citing this list:
+
+```bibtex
+@misc{awesome_relight_2026,
+  title = {Awesome Relight},
+  author = {Awesome Relight Contributors},
+  journal = {GitHub repository},
+  url = {https://github.com/chenhouyuan/Awesome-Relight},
+  year = {2026}
+}
+```
+
+---
+
+## All Thanks to Our Contributors
+
+<a href="https://github.com/chenhouyuan/Awesome-Relight/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=chenhouyuan/Awesome-Relight" alt="Contributors">
+</a>
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=chenhouyuan/Awesome-Relight&type=Date)](https://www.star-history.com/#chenhouyuan/Awesome-Relight&Date)
