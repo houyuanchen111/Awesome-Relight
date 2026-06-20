@@ -19,6 +19,7 @@
 
 ## 🚩 News & Updates
 
+🆕 **[2026-06-20] Recent Relighting Refresh** — Added recent 2025-2026 work on physically controllable image relighting, video relighting, portrait and human relighting, relightable Gaussian/3D scenes, and new datasets/benchmarks.
 
 🔥 **[Ongoing] Coverage Expansion** — We are tracking relighting papers, datasets, code, demos, challenges, and production tools.
 
@@ -30,6 +31,7 @@
 
 - 🎯 [Aim of the Project](#aim-of-the-project)
 - 📚 [Surveys](#surveys)
+- 🧭 [Recent Research Map (2025-2026)](#recent-research-map-2025-2026)
 - 🖼️ [Scene and General Image Relighting](#scene-and-general-image-relighting)
 - 🎞️ [Video Relighting](#video-relighting)
 - 🧑 [Portrait, Face, and Human Relighting](#portrait-face-and-human-relighting)
@@ -64,6 +66,20 @@ Relighting is a practical meeting point between computer graphics, computer visi
 
 ---
 
+## Recent Research Map (2025-2026)
+
+Recent relighting work is rapidly splitting into several complementary tracks:
+
+- **Physically controllable single-image relighting** is moving beyond text-only or environment-map-only control toward explicit 3D/PBR handles. Representative work includes [Physically Controllable Relighting of Photographs](https://arxiv.org/abs/2508.05626), [Learning Latent Proxies for Controllable Single-Image Relighting](https://arxiv.org/abs/2603.15555), [PI-Light](https://arxiv.org/abs/2601.22135), [TokenLight](https://arxiv.org/abs/2604.15310), [Learning Illumination Control in Diffusion Models](https://arxiv.org/abs/2604.24877), and [PIXLRelight](https://arxiv.org/abs/2605.18735). The common trend is to recover or synthesize intrinsic/PBR-style control signals first, then use a neural renderer or diffusion prior for photorealism.
+- **Video relighting** has become a major 2025-2026 frontier. Methods such as [RelightVid](https://arxiv.org/abs/2501.16330), [UniRelight](https://arxiv.org/abs/2506.15673), [Lumen](https://arxiv.org/abs/2508.12945), [ReLumix](https://arxiv.org/abs/2509.23769), [UniLumos](https://arxiv.org/abs/2511.01678), [RelightMaster](https://arxiv.org/abs/2511.06271), [FlowPortal](https://arxiv.org/abs/2511.18346), [Hi-Light](https://arxiv.org/abs/2601.23167), [Light4D](https://arxiv.org/abs/2602.11769), [CamLit](https://arxiv.org/abs/2603.14241), [LightCtrl](https://arxiv.org/abs/2603.27083), [Relit-LiVE](https://arxiv.org/abs/2605.06658), [BodyReLux](https://arxiv.org/abs/2605.21766), [HarmoVid](https://arxiv.org/abs/2605.28811), and [Pixel Cube](https://arxiv.org/abs/2606.02919) focus on temporal coherence, explicit light trajectories, dynamic environment maps, camera-aware control, and production-quality foreground/background harmonization.
+- **Relightable 3D Gaussian and neural scene representations** are expanding from object-scale reconstruction into outdoor scenes, room-scale environments, virtual production, and urban simulation. Recent directions include [R3GW](https://arxiv.org/abs/2603.02801), [ReLi3D](https://arxiv.org/abs/2603.19753), [SSD-GS](https://arxiv.org/abs/2604.13333), [SeasonScapes](https://arxiv.org/abs/2605.09039), [Relightable Gaussian Splatting for Virtual Production](https://arxiv.org/abs/2605.09024), [F-RNG](https://arxiv.org/abs/2605.25975), [SRUG](https://arxiv.org/abs/2605.24700), [MaterialClusterGS](https://arxiv.org/abs/2606.09018), [TRON](https://arxiv.org/abs/2606.11314), and [BRDFusion](https://arxiv.org/abs/2606.17049). The field is increasingly mixing explicit light transport, material priors, and generative neural renderers.
+- **Portrait, face, and human relighting** is shifting toward calibrated data, relightable avatars, and dynamic human performance. New representative work includes [3DPR](https://arxiv.org/abs/2510.15846), [KPLM-STA](https://arxiv.org/abs/2511.08169), [POLAR](https://arxiv.org/abs/2512.13192), [Light Up Your Face](https://arxiv.org/abs/2602.04300), [Toward Real-World Adoption of Portrait Relighting](https://arxiv.org/abs/2604.23094), [EgoRelight](https://arxiv.org/abs/2605.28401), [BodyReLux](https://arxiv.org/abs/2605.21766), and [Pixel Cube](https://arxiv.org/abs/2606.02919).
+- **Datasets and benchmarks** are becoming more important because diffusion relighting often looks convincing on synthetic tests while failing under real lighting, geometry, and camera response. Recent datasets include [HumanOLAT](https://arxiv.org/abs/2508.09137), [OLATverse](https://arxiv.org/abs/2511.02483), [POLAR](https://arxiv.org/abs/2512.13192), [Light Up Your Face](https://arxiv.org/abs/2602.04300), [WildRelight](https://arxiv.org/abs/2605.11696), and [SeasonScapes](https://arxiv.org/abs/2605.09039).
+
+In short: diffusion models are providing photorealistic priors, but the strongest recent systems are reintroducing explicit lighting, geometry, material, or OLAT structure to make relighting controllable, temporally stable, and useful for real production pipelines.
+
+---
+
 ## Scene and General Image Relighting
 
 - **Learning to Factorize and Relight a City**. [![arXiv](https://img.shields.io/badge/arXiv-2008.02796-b31b1b.svg)](https://arxiv.org/abs/2008.02796)
@@ -95,19 +111,22 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **LightLab: Controlling Light Sources in Images with Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2505.09608-b31b1b.svg)](https://arxiv.org/abs/2505.09608) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://nadmag.github.io/LightLab/)
 - **SAIL: Self-supervised Albedo Estimation from Real Images with a Latent Diffusion Model**. [![arXiv](https://img.shields.io/badge/arXiv-2505.19751-b31b1b.svg)](https://arxiv.org/abs/2505.19751)
 - **DreamLight: Towards Harmonious and Consistent Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2506.14549-b31b1b.svg)](https://arxiv.org/abs/2506.14549) [![Code](https://img.shields.io/github/stars/yongliu20/DreamLight?style=flat&logo=github&label=Code&color=green)](https://github.com/yongliu20/DreamLight)
-- **Physically Controllable Relighting of Photographs**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2025-red.svg)](https://yaksoy.github.io/papers/SIG25-PhysicalRelighting.pdf) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yaksoy.github.io/PhysicalRelighting/)
+- **Physically Controllable Relighting of Photographs**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2025-red.svg)](https://yaksoy.github.io/papers/SIG25-PhysicalRelighting.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2508.05626-b31b1b.svg)](https://arxiv.org/abs/2508.05626) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yaksoy.github.io/PhysicalRelighting/)
 - **TransLight: Image-Guided Customized Lighting Control with Generative Decoupling**. [![arXiv](https://img.shields.io/badge/arXiv-2508.14814-b31b1b.svg)](https://arxiv.org/abs/2508.14814)
 - **PractiLight: Practical Light Control Using Foundational Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2509.01837-b31b1b.svg)](https://arxiv.org/abs/2509.01837) [![Code](https://img.shields.io/github/stars/yoterel/PractiLight?style=flat&logo=github&label=Code&color=green)](https://github.com/yoterel/PractiLight)
 - **V-RGBX: Video Editing with Accurate Controls over Intrinsic Properties**. [![arXiv](https://img.shields.io/badge/arXiv-2512.11799-b31b1b.svg)](https://arxiv.org/abs/2512.11799) [![Code](https://img.shields.io/github/stars/Aleafy/V-RGBX?style=flat&logo=github&label=Code&color=green)](https://github.com/Aleafy/V-RGBX)
 - **Training-Free Multi-View Extension of IC-Light for Textual Position-Aware Scene Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2511.13684-b31b1b.svg)](https://arxiv.org/abs/2511.13684)
 - **SyncLight: Controllable and Consistent Multi-View Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2601.16981-b31b1b.svg)](https://arxiv.org/abs/2601.16981)
 - **PI-Light: Physics-Inspired Diffusion for Full-Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2601.22135-b31b1b.svg)](https://arxiv.org/abs/2601.22135)
+- **Relighting as a Probe of Visual Priors via Augmented Latent Intrinsics**. [![arXiv](https://img.shields.io/badge/arXiv-2602.01391-b31b1b.svg)](https://arxiv.org/abs/2602.01391)
 - **Joint Shadow Generation and Relighting via Light-Geometry Interaction Maps**. [![arXiv](https://img.shields.io/badge/arXiv-2602.21820-b31b1b.svg)](https://arxiv.org/abs/2602.21820)
 - **Learning Latent Proxies for Controllable Single-Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2603.15555-b31b1b.svg)](https://arxiv.org/abs/2603.15555)
 - **LightMover: Generative Light Movement with Color and Intensity Controls**. [![arXiv](https://img.shields.io/badge/arXiv-2603.27209-b31b1b.svg)](https://arxiv.org/abs/2603.27209)
 - **TokenLight: Precise Lighting Control in Images using Attribute Tokens**. [![arXiv](https://img.shields.io/badge/arXiv-2604.15310-b31b1b.svg)](https://arxiv.org/abs/2604.15310)
 - **AD-Relight: Training-Free Banner Relighting via Illumination Translation with Diffusion Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2604.24407-b31b1b.svg)](https://arxiv.org/abs/2604.24407)
 - **Learning Illumination Control in Diffusion Models**. [![arXiv](https://img.shields.io/badge/arXiv-2604.24877-b31b1b.svg)](https://arxiv.org/abs/2604.24877) [![Code](https://img.shields.io/github/stars/nishitanand/image-relighting-diffusion?style=flat&logo=github&label=Code&color=green)](https://github.com/nishitanand/image-relighting-diffusion)
+- **WildRelight: A Real-World Benchmark and Physics-Guided Adaptation for Single-Image Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2605.11696-b31b1b.svg)](https://arxiv.org/abs/2605.11696)
+- **PIXLRelight: Controllable Relighting via Intrinsic Conditioning**. [![arXiv](https://img.shields.io/badge/arXiv-2605.18735-b31b1b.svg)](https://arxiv.org/abs/2605.18735) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://mlfarinha.github.io/pixl-relight/) [![Code](https://img.shields.io/github/stars/mlfarinha/pixlrelight?style=flat&logo=github&label=Code&color=green)](https://github.com/mlfarinha/pixlrelight)
 
 ---
 
@@ -136,8 +155,12 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **Light-X: Generative 4D Video Rendering with Camera and Illumination Control**. [![arXiv](https://img.shields.io/badge/arXiv-2512.05115-b31b1b.svg)](https://arxiv.org/abs/2512.05115) [![Code](https://img.shields.io/github/stars/TQTQliu/Light-X?style=flat&logo=github&label=Code&color=green)](https://github.com/TQTQliu/Light-X)
 - **Hi-Light: A Path to high-fidelity, high-resolution video relighting with a Novel Evaluation Paradigm**. [![arXiv](https://img.shields.io/badge/arXiv-2601.23167-b31b1b.svg)](https://arxiv.org/abs/2601.23167) [![Code](https://img.shields.io/github/stars/lxrswdd/Hi-Light?style=flat&logo=github&label=Code&color=green)](https://github.com/lxrswdd/Hi-Light)
 - **Light4D: Training-Free Extreme Viewpoint 4D Video Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2602.11769-b31b1b.svg)](https://arxiv.org/abs/2602.11769) [![Code](https://img.shields.io/github/stars/AIGeeksGroup/Light4D?style=flat&logo=github&label=Code&color=green)](https://github.com/AIGeeksGroup/Light4D)
+- **CamLit: Unified Video Diffusion with Explicit Camera and Lighting Control**. [![arXiv](https://img.shields.io/badge/arXiv-2603.14241-b31b1b.svg)](https://arxiv.org/abs/2603.14241)
 - **LightCtrl: Training-free Controllable Video Relighting**. [![arXiv](https://img.shields.io/badge/arXiv-2603.27083-b31b1b.svg)](https://arxiv.org/abs/2603.27083) [![Code](https://img.shields.io/github/stars/GVCLab/LightCtrl?style=flat&logo=github&label=Code&color=green)](https://github.com/GVCLab/LightCtrl)
 - **Relit-LiVE: Relight Video by Jointly Learning Environment Video**. [![arXiv](https://img.shields.io/badge/arXiv-2605.06658-b31b1b.svg)](https://arxiv.org/abs/2605.06658) [![Code](https://img.shields.io/github/stars/zhuxing0/Relit-LiVE?style=flat&logo=github&label=Code&color=green)](https://github.com/zhuxing0/Relit-LiVE)
+- **BodyReLux: Temporally Consistent Full-Body Video Relighting**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2026-red.svg)](https://eyeline-labs.github.io/bodyrelux/static/pdfs/Siggraph2026_BodyRelux.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2605.21766-b31b1b.svg)](https://arxiv.org/abs/2605.21766) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://eyeline-labs.github.io/bodyrelux/)
+- **HarmoVid: Relightful Video Portrait Harmonization**. [![Paper](https://img.shields.io/badge/Paper-CVPR2026-red.svg)](https://openaccess.thecvf.com/content/CVPR2026/papers/Choi_Relightful_Video_Portrait_Harmonization_CVPR_2026_paper.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2605.28811-b31b1b.svg)](https://arxiv.org/abs/2605.28811)
+- **Pixel Cube: Diffusion-based Portrait Video Relighting Through Realistic Lighting Reproduction**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2026-red.svg)](https://ivlab.cs.gmu.edu/files/SIGGRAPH2026_PixelCube_hi.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2606.02919-b31b1b.svg)](https://arxiv.org/abs/2606.02919) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://yufanzhang82.github.io/PixelCube/)
 
 ---
 
@@ -164,6 +187,7 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **Joint Learning of Depth and Appearance for Portrait Image Animation**. [![arXiv](https://img.shields.io/badge/arXiv-2501.08649-b31b1b.svg)](https://arxiv.org/abs/2501.08649)
 - **IC-Portrait: In-Context Matching for View-Consistent Personalized Portrait Generation**. [![arXiv](https://img.shields.io/badge/arXiv-2501.17159-b31b1b.svg)](https://arxiv.org/abs/2501.17159)
 - **3DPR: Single Image 3D Portrait Relight using Generative Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2510.15846-b31b1b.svg)](https://arxiv.org/abs/2510.15846)
+- **POLAR: A Portrait OLAT Dataset and Generative Framework for Illumination-Aware Face Modeling**. [![Paper](https://img.shields.io/badge/Paper-CVPR2026-red.svg)](https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_POLAR_A_Portrait_OLAT_Dataset_and_Generative_Framework_for_Illumination-Aware_CVPR_2026_paper.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2512.13192-b31b1b.svg)](https://arxiv.org/abs/2512.13192) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://rex0191.github.io/POLAR/) [![Code](https://img.shields.io/github/stars/Rex0191/POLARNet?style=flat&logo=github&label=Code&color=green)](https://github.com/Rex0191/POLARNet)
 - **Light Up Your Face: A Physically Consistent Dataset and Diffusion Model for Face Fill-Light Enhancement**. [![arXiv](https://img.shields.io/badge/arXiv-2602.04300-b31b1b.svg)](https://arxiv.org/abs/2602.04300)
 - **Toward Real-World Adoption of Portrait Relighting via Hybrid Domain Knowledge Fusion**. [![arXiv](https://img.shields.io/badge/arXiv-2604.23094-b31b1b.svg)](https://arxiv.org/abs/2604.23094)
 
@@ -180,6 +204,7 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **GroomLight: Hybrid Inverse Rendering for Relightable Human Hair Appearance Modeling**. [![arXiv](https://img.shields.io/badge/arXiv-2503.10597-b31b1b.svg)](https://arxiv.org/abs/2503.10597) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://syntec-research.github.io/GroomLight/)
 - **Comprehensive Relighting: Generalizable and Consistent Monocular Human Relighting and Harmonization**. [![arXiv](https://img.shields.io/badge/arXiv-2504.03011-b31b1b.svg)](https://arxiv.org/abs/2504.03011) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://junyingw.github.io/paper/relighting/index.html)
 - **FashionPose: Text to Pose to Relight Image Generation for Personalized Fashion Visualization**. [![arXiv](https://img.shields.io/badge/arXiv-2507.13311-b31b1b.svg)](https://arxiv.org/abs/2507.13311)
+- **KPLM-STA: Physically-Accurate Shadow Synthesis for Human Relighting via Keypoint-Based Light Modeling**. [![arXiv](https://img.shields.io/badge/arXiv-2511.08169-b31b1b.svg)](https://arxiv.org/abs/2511.08169)
 
 ---
 
@@ -226,6 +251,7 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **HeadLighter: Disentangling Illumination in Generative 3D Gaussian Heads via Lightstage Captures**. [![arXiv](https://img.shields.io/badge/arXiv-2601.02103-b31b1b.svg)](https://arxiv.org/abs/2601.02103)
 - **RelightAnyone: A Generalized Relightable 3D Gaussian Head Model**. [![arXiv](https://img.shields.io/badge/arXiv-2601.03357-b31b1b.svg)](https://arxiv.org/abs/2601.03357)
 - **D-Rex: Diffusion Rendering for Relightable Expressive Avatars**. [![arXiv](https://img.shields.io/badge/arXiv-2604.27871-b31b1b.svg)](https://arxiv.org/abs/2604.27871)
+- **EgoRelight: Egocentric Human Capture and Illumination Recovery for Relightable and Photoreal Avatar Rendering**. [![Paper](https://img.shields.io/badge/Paper-SIGGRAPH2026-red.svg)](https://arxiv.org/pdf/2605.28401) [![arXiv](https://img.shields.io/badge/arXiv-2605.28401-b31b1b.svg)](https://arxiv.org/abs/2605.28401) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://vcai.mpi-inf.mpg.de/projects/EgoRelight/)
 - **A Diffusion Approach to Radiance Field Relighting using Multi-Illumination Synthesis**. [![arXiv](https://img.shields.io/badge/arXiv-2409.08947-b31b1b.svg)](https://arxiv.org/abs/2409.08947) [![Code](https://img.shields.io/github/stars/graphdeco-inria/gaussian-splatting-relighting?style=flat&logo=github&label=Code&color=green)](https://github.com/graphdeco-inria/gaussian-splatting-relighting)
 - **Digital Kitchen Remodeling: Editing and Relighting Intricate Indoor Scenes from a Single Panorama**. [![arXiv](https://img.shields.io/badge/arXiv-2504.16086-b31b1b.svg)](https://arxiv.org/abs/2504.16086)
 - **Hybrelighter: Combining Deep Anisotropic Diffusion and Scene Reconstruction for On-device Real-time Relighting in Mixed Reality**. [![arXiv](https://img.shields.io/badge/arXiv-2508.14930-b31b1b.svg)](https://arxiv.org/abs/2508.14930)
@@ -265,6 +291,13 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **LumiMotion: Improving Gaussian Relighting with Scene Dynamics**. [![arXiv](https://img.shields.io/badge/arXiv-2604.10994-b31b1b.svg)](https://arxiv.org/abs/2604.10994) [![Code](https://img.shields.io/github/stars/joaxkal/LumiMotion?style=flat&logo=github&label=Code&color=green)](https://github.com/joaxkal/LumiMotion)
 - **SSD-GS: Scattering and Shadow Decomposition for Relightable 3D Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2604.13333-b31b1b.svg)](https://arxiv.org/abs/2604.13333) [![Code](https://img.shields.io/github/stars/irisfreesiri/SSD-GS?style=flat&logo=github&label=Code&color=green)](https://github.com/irisfreesiri/SSD-GS)
 - **GeoRelight: Learning Joint Geometrical Relighting and Reconstruction with Flexible Multi-Modal Diffusion Transformers**. [![arXiv](https://img.shields.io/badge/arXiv-2604.20715-b31b1b.svg)](https://arxiv.org/abs/2604.20715)
+- **SeasonScapes: Learning Large-scale Re-lightable 3D Landscapes with Seasonal Variation from Sparse Webcams**. [![Paper](https://img.shields.io/badge/Paper-CVPRW2026-red.svg)](https://openaccess.thecvf.com/content/CVPR2026W/ReGen4D/papers/Kleger_SeasonScapes_Learning_Large-scale_Re-lightable_3D_Landscapes_with_Seasonal_Variation_from_CVPRW_2026_paper.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2605.09039-b31b1b.svg)](https://arxiv.org/abs/2605.09039)
+- **Relightable Gaussian Splatting for Virtual Production Using Image-Based Illumination**. [![arXiv](https://img.shields.io/badge/arXiv-2605.09024-b31b1b.svg)](https://arxiv.org/abs/2605.09024) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://interims-git.github.io/) [![Code](https://img.shields.io/github/stars/interims-git/interims-git.github.io?style=flat&logo=github&label=Code&color=green)](https://github.com/interims-git/interims-git.github.io)
+- **SRUG: Shadow-Guided Relightable Urban Scene with Generation Model**. [![arXiv](https://img.shields.io/badge/arXiv-2605.24700-b31b1b.svg)](https://arxiv.org/abs/2605.24700)
+- **F-RNG: Feed-Forward Relightable Neural Gaussians**. [![arXiv](https://img.shields.io/badge/arXiv-2605.25975-b31b1b.svg)](https://arxiv.org/abs/2605.25975)
+- **MaterialClusterGS: Palette-Based Material Decomposition and Physically-Based Relighting with 2D Gaussian Splatting**. [![arXiv](https://img.shields.io/badge/arXiv-2606.09018-b31b1b.svg)](https://arxiv.org/abs/2606.09018)
+- **TRON: Tracing Rays to Orchestrate a Neural Renderer for 3D Gaussian Reconstructions**. [![arXiv](https://img.shields.io/badge/arXiv-2606.11314-b31b1b.svg)](https://arxiv.org/abs/2606.11314) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://research.nvidia.com/labs/sil/projects/tron/)
+- **BRDFusion: Physics Meets Generation for Urban Scene Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2606.17049-b31b1b.svg)](https://arxiv.org/abs/2606.17049) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://shigon255.github.io/brdfusion-page/) [![Code](https://img.shields.io/github/stars/shigon255/BRDFusion?style=flat&logo=github&label=Code&color=green)](https://github.com/shigon255/BRDFusion)
 
 ---
 
@@ -302,7 +335,10 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **Cast Shadow Human Dataset**: Data for learning projective shadow textures. [![Dataset](https://img.shields.io/badge/Dataset-Link-purple)](https://www.cvssp.org/data/crh)
 - **HumanOLAT**: Large-scale full-body human relighting and novel-view synthesis dataset. [![arXiv](https://img.shields.io/badge/arXiv-2508.09137-b31b1b.svg)](https://arxiv.org/abs/2508.09137) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://vcai.mpi-inf.mpg.de/projects/HumanOLAT/) [![Code](https://img.shields.io/github/stars/TMT22/HumanOLAT?style=flat&logo=github&label=Code&color=green)](https://github.com/TMT22/HumanOLAT)
 - **OLATverse**: Large-scale real-world object dataset with precise lighting control. [![arXiv](https://img.shields.io/badge/arXiv-2511.02483-b31b1b.svg)](https://arxiv.org/abs/2511.02483)
+- **POLAR**: Open portrait OLAT dataset and generative framework for illumination-aware face modeling. [![Paper](https://img.shields.io/badge/Paper-CVPR2026-red.svg)](https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_POLAR_A_Portrait_OLAT_Dataset_and_Generative_Framework_for_Illumination-Aware_CVPR_2026_paper.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2512.13192-b31b1b.svg)](https://arxiv.org/abs/2512.13192) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://rex0191.github.io/POLAR/) [![Code](https://img.shields.io/github/stars/Rex0191/POLARNet?style=flat&logo=github&label=Code&color=green)](https://github.com/Rex0191/POLARNet)
 - **Light Up Your Face Dataset**: Physically consistent face fill-light enhancement data and diffusion baseline. [![arXiv](https://img.shields.io/badge/arXiv-2602.04300-b31b1b.svg)](https://arxiv.org/abs/2602.04300)
+- **WildRelight**: In-the-wild single-image relighting dataset and benchmark with aligned outdoor scenes and HDR environment maps. [![arXiv](https://img.shields.io/badge/arXiv-2605.11696-b31b1b.svg)](https://arxiv.org/abs/2605.11696)
+- **SeasonScapes**: Large-scale sparse-webcam 3D landscape dataset with seasonal variation and relightable mesh construction. [![Paper](https://img.shields.io/badge/Paper-CVPRW2026-red.svg)](https://openaccess.thecvf.com/content/CVPR2026W/ReGen4D/papers/Kleger_SeasonScapes_Learning_Large-scale_Re-lightable_3D_Landscapes_with_Seasonal_Variation_from_CVPRW_2026_paper.pdf) [![arXiv](https://img.shields.io/badge/arXiv-2605.09039-b31b1b.svg)](https://arxiv.org/abs/2605.09039)
 
 ---
 
@@ -319,6 +355,7 @@ Relighting is a practical meeting point between computer graphics, computer visi
 
 - **IC-Light**. [![Code](https://img.shields.io/github/stars/lllyasviel/IC-Light?style=flat&logo=github&label=Code&color=green)](https://github.com/lllyasviel/IC-Light) [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/lllyasviel/IC-Light) [![Demo](https://img.shields.io/badge/Demo-v2-yellow)](https://huggingface.co/spaces/lllyasviel/iclight-v2-vary)
 - **LBM Relighting Demo**. [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/jasperai/LBM_relighting) [![Code](https://img.shields.io/github/stars/gojasper/LBM?style=flat&logo=github&label=Code&color=green)](https://github.com/gojasper/LBM)
+- **PIXLRelight**. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://mlfarinha.github.io/pixl-relight/) [![Model](https://img.shields.io/badge/Model-HF-yellow)](https://huggingface.co/mlfarinha/pixlrelight) [![Code](https://img.shields.io/github/stars/mlfarinha/pixlrelight?style=flat&logo=github&label=Code&color=green)](https://github.com/mlfarinha/pixlrelight)
 - **Flux Kontext Relight**. [![Demo](https://img.shields.io/badge/Demo-HF-yellow)](https://huggingface.co/spaces/kontext-community/kontext-relight)
 - **SwitchLight**. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://www.switchlight.beeble.ai/)
 - **SwitchLight 2.0**. [![Website](https://img.shields.io/badge/App-Link-blue)](https://app.beeble.ai/home) [![Blog](https://img.shields.io/badge/Blog-Link-orange)](https://beeble.ai/research/switchlight-2-0-is-here)
@@ -358,6 +395,7 @@ Relighting is a practical meeting point between computer graphics, computer visi
 - **GeoSplatting: Towards Geometry Guided Gaussian Splatting for Physically-based Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2410.24204-b31b1b.svg)](https://arxiv.org/abs/2410.24204) [![Code](https://img.shields.io/github/stars/PKU-VCL-Geometry/GeoSplatting?style=flat&logo=github&label=Code&color=green)](https://github.com/PKU-VCL-Geometry/GeoSplatting)
 - **GUS-IR: Gaussian Splatting with Unified Shading for Inverse Rendering**. [![arXiv](https://img.shields.io/badge/arXiv-2411.07478-b31b1b.svg)](https://arxiv.org/abs/2411.07478)
 - **PS-GS: Gaussian Splatting for Multi-View Photometric Stereo**. [![arXiv](https://img.shields.io/badge/arXiv-2507.18231-b31b1b.svg)](https://arxiv.org/abs/2507.18231)
+- **Path-Traced Inverse Rendering with Global Illumination in 3D Gaussian Fields**. [![arXiv](https://img.shields.io/badge/arXiv-2606.09606-b31b1b.svg)](https://arxiv.org/abs/2606.09606)
 - **UniVidX: A Unified Multimodal Framework for Versatile Video Generation via Diffusion Priors**. [![arXiv](https://img.shields.io/badge/arXiv-2605.00658-b31b1b.svg)](https://arxiv.org/abs/2605.00658) [![Website](https://img.shields.io/badge/Website-Link-blue)](https://houyuanchen111.github.io/UniVidX.github.io/) [![Model](https://img.shields.io/badge/Model-HF-yellow)](https://huggingface.co/houyuanchen/UniVidX) [![Code](https://img.shields.io/github/stars/houyuanchen111/UniVidX?style=flat&logo=github&label=Code&color=green)](https://github.com/houyuanchen111/UniVidX)
 
 ### HDR Panorama Generation
